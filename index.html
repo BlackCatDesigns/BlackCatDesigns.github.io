@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Viewer</title>
+    <title>City of Olean - Code</title>
     <link rel="stylesheet" href="style2.css">
-    <script src="Explorer.js"></script>
-    <script>
+    <link rel="icon" href="olean-logo.png">
+    <script src="toggle.js"></script> /*Script which hides subsection links until the section is clicked*/
+    <script> /*Script to get the homepage to reload*/
         function refreshPage() {
             location.reload(); // Reloads the current page
         }
@@ -14,10 +15,10 @@
 </head>
 <body>
     <div class="header">
-        <a href="https://www.cityofolean.org"> <img src="CoO-Logo.png" alt="City of Olean logo"></img></a>
+        <a href="https://www.cityofolean.org"> <img src="CoO-Logo.png" alt="City of Olean logo"></img></a> /*Link to the City of Olean homepage*/
     </div>
     <div class="container">
-        <div class="sidebar">            
+        <div class="sidebar">  /*Makes all the sections into collapsible directory style links*/
             <a class="homeButton" href="https://BlackCatDesigns.github.io" onclick="refreshPage()">Home</a>
             <div class="parts">Part I: Charter</div>
             <div class="directory" onclick="toggleLinks(this)">Ch. C - Charter</div>
@@ -122,7 +123,7 @@
             <object id="pdf22" class="content" data="https://BlackCatDesigns.github.io/Section28UseRegulationTable.pdf" type="application/pdf"></object>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="displayContent.js"></script>
 </body>
 </html>
 
