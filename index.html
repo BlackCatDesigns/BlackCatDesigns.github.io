@@ -6,19 +6,19 @@
     <title>City of Olean - Code</title>
     <link rel="stylesheet" href="style2.css">
     <link rel="icon" href="olean-logo.png">
-    <script src="toggle.js"></script> /*Script which hides subsection links until the section is clicked*/
-    <script> /*Script to get the homepage to reload*/
+    <script src="toggle.js"></script> <!--Script which hides subsection links until the section is clicked-->
+    <script> <!--Script to get the homepage to reload-->
         function refreshPage() {
-            location.reload(); // Reloads the current page
+            location.reload(); 
         }
     </script>
 </head>
 <body>
     <div class="header">
-        <a href="https://www.cityofolean.org"> <img src="CoO-Logo.png" alt="City of Olean logo"></img></a> /*Link to the City of Olean homepage*/
+        <a href="https://www.cityofolean.org"> <img src="CoO-Logo.png" alt="City of Olean logo"></img></a> <!--Link to the City of Olean homepage-->
     </div>
     <div class="container">
-        <div class="sidebar">  /*Makes all the sections into collapsible directory style links*/
+        <div class="sidebar">  <!--Makes all the sections into collapsible directory style links-->
             <a class="homeButton" href="https://BlackCatDesigns.github.io" onclick="refreshPage()">Home</a>
             <div class="parts">Part I: Charter</div>
             <div class="directory" onclick="toggleLinks(this)">Ch. C - Charter</div>
@@ -64,7 +64,7 @@
             <div class="directory" onclick="toggleLinks(this)">Ch. 26 - Vehicles for Hire</div>
             <div class="directory" onclick="toggleLinks(this)">Ch. 27 - Water and Sewers and Sewage</div>
             <div class="directory" onclick="toggleLinks(this)">Ch. 28 - Zoning Laws</div>
-                <div class="links">
+                <div class="links"> <!--Links to subsections-->
                     <a href="#" data-content="pdf1">Article 1 - Title, Purpose, and Authority </a><br>
                     <a href="#" data-content="pdf2">Article 2 - Interpretation</a><br>
                     <a href="#" data-content="pdf3">Article 3 - Establishment of Districts</a><br>
@@ -90,16 +90,17 @@
                 </div>
             <div class="directory" onclick="toggleLinks(this)">Code Comparative Tables</div>
             <div class="directory" onclick="toggleLinks(this)">State Reference Laws</div>
-            <div class="bottomLinks">
+            <div class="bottomLinks">    <!--Links to show up at the bottom of the page-->
                 <a href="help.html">Help</a>
                 |
                 <a href="https://cityofolean.org/contact-us/">Contact Us</a>
             </div>
         </div>
         <div class="main-content">
-            <div class="home">Welcome to the City of Olean's code homepage. Please select a category on the left.</div>
+            <div class="home">Welcome to the City of Olean's code homepage. Please select a category on the left.</div> <!--Homepage dialouge-->
             <div class="note">*Note, only Chapter 28 - Zoning Laws works at the moment.</div>
-            <object id="pdf1" class="content" data="https://BlackCatDesigns.github.io/Article1.pdf" type="application/pdf"></object>
+            <!--Creates objects of pdf files of the subsections-->
+            <object id="pdf1" class="content" data="https://BlackCatDesigns.github.io/Article1.pdf" type="application/pdf"></object> 
             <object id="pdf2" class="content" data="https://BlackCatDesigns.github.io/Article2.pdf" type="application/pdf"></object>
             <object id="pdf3" class="content" data="https://BlackCatDesigns.github.io/Article3.pdf" type="application/pdf"></object>
             <object id="pdf4" class="content" data="https://BlackCatDesigns.github.io/Article4.pdf" type="application/pdf"></object>
@@ -123,7 +124,7 @@
             <object id="pdf22" class="content" data="https://BlackCatDesigns.github.io/Section28UseRegulationTable.pdf" type="application/pdf"></object>
         </div>
     </div>
-    <script src="displayContent.js"></script>
+    <script src="displayContent.js"></script> <!--Script which clears the current displayed content and loads the new content-->
 </body>
 </html>
 
