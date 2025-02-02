@@ -122,12 +122,15 @@
     display: none;
   }
 
-  .content {
-    margin-left: auto;
-    width: 80%;
-    padding: 0px;
-    box-sizing: border-box;
-    overflow-y: auto;
+.content {
+   margin-left: auto;
+   width: 80%;
+   padding-left: 10px;
+   padding-right: 0px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   box-sizing: border-box;
+   overflow-y: auto;
   }
 
   /*Main content Styling*/
