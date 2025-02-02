@@ -8,6 +8,16 @@
   <link rel="stylesheet" href="style3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
   <meta name="description" content="This is the City of Olean code webpage.">
+  <script>
+    function toggleLinks(event) {
+        var links = event.nextElementSibling;
+        if (links.style.display === "none" || links.style.display === "") {
+            links.style.display = "block";
+        } else {
+            links.style.display = "none";
+        }
+    }
+  </script>
 <body>
     <header>
         <a href="https://www.cityofolean.org"> <img src="CoO-Logo.png" alt="City of Olean logo"></a>
@@ -15,60 +25,199 @@
 
     <div class="sidebar">
         <ul class="ch28">
-            <li class="articles"><a href="#" data-content="pdf1">Article 1 - Title, Purpose, and Authority </a></li>
-            <ul class="section" id="ch28sec1">
-                Sec. 1.0.  Short title. 
-                Sec. 1.1.  Authority. 
-                Sec. 1.2.  Long title. 
-                Sec. 1.3.  Purpose.  
-            </ul>
-            <li class="articles"><a href="#" data-content="pdf2">Article 2 - Interpretation</a></li>
-            <ul class="section" id="ch28sec2">
-                Sec. 2.0.  Interpretation, separability and conflict.
-                Sec. 2.1.  Definitions. 
-            </ul>
-            <li class="articles"><a href="#" data-content="pdf3">Article 3 - Establishment of Districts</a></li>
-            <ul class="section" id="ch28sec3">
-                Sec. 3.0.  Application of regulations.
-                Sec. 3.1.  General regulations. 
-                Sec. 3.2.  Zoning districts. 
-                Sec. 3.3.  Zoning map of the City of Olean.
-                Sec. 3.4.  Interpretation of district boundaries. 
-            </ul>
-            <li class="articles"><a href="#" data-content="pdf4">Article 4 - Zoning Use Districts</a></li>
-            <ul class="section" id="ch28sec4">
-                Sec. 4.0.  Single-Family Residential Use District (R1).
-                Sec. 4.1.  Single-family/General Residential Use District (R2). 
-                Sec. 4.2.  General Residential Use District (R3).
-                Sec. 4.3.  Residential Transition Use District (RT).
-                Sec. 4.4.  City Center Use District (CC). 
-                Sec. 4.5.  General Commercial Use District (GC).
-                Sec. 4.6.  Waterfront Conservation Use District (WC). 
-                Sec. 4.7.  Industrial Use District (I).
-                Sec. 4.8.  General Industrial District (I2).
-                Sec. 4.9.  Special Industrial District (I3).
-                Sec. 4.10.  through Sec. 4.13. Reserved.
-                Sec. 4.14.  Use regulation table.
-                Sec. 4.15.  Activities prohibited in all districts. 
-            </ul>
-            <li class="articles"><a href="#" data-content="pdf5">Article 5 - Incentive Zoning</a></li>
-            <li class="articles"><a href="#" data-content="pdf6">Article 6 - Area and Bulk Regulations Density Control</a></li>
-            <li class="articles"><a href="#" data-content="pdf7">Article 7 - Planned Residential District(PR)</a></li>
-            <li class="articles"><a href="#" data-content="pdf8">Article 8 - Planned Business Disctrict(PB)</a></li>
-            <li class="articles"><a href="#" data-content="pdf9">Article 9 - Planning Board: Special Use Permits and Site Plan Review and Approval</a><br></li>
-            <li class="articles"><a href="#" data-content="pdf10">Article 10 - Development Guidelines and General Provisions</a></li>
-            <li class="articles"><a href="#" data-content="pdf11">Article 11 - Signage</a></li>
-            <li class="articles"><a href="#" data-content="pdf12">Article 12 - Non-Conforming Buildings, Uses, and Lots</a></li>
-            <li class="articles"><a href="#" data-content="pdf13">Article 13 - General Exceptions</a></li>
-            <li class="articles"><a href="#" data-content="pdf14">Article 14 - Zoning Board of Appeals</a></li>
-            <li class="articles"><a href="#" data-content="pdf15">Article 15 - Administration</a></li>
-            <li class="articles"><a href="#" data-content="pdf16">Article 16 - Amendments</a></li>
-            <li class="articles"><a href="#" data-content="pdf17">Article 17 - Remedies</a></li>
-            <li class="articles"><a href="#" data-content="pdf18">Article 18 - Fee Schedule</a></li>
-            <li class="articles"><a href="#" data-content="pdf19">Article 19 - Repeal</a></li>
-            <li class="articles"><a href="#" data-content="pdf20">Article 20 - Effective Date</a></li>
-            <li class="articles"><a href="#" data-content="pdf21">Article 21 - Downtown Olean Form-Based Zoning Code</a></li>
-            <li class="articles"><a href="#" data-content="pdf22">Use Regulation Tables</a></li>
+            <li class="articles"><a href="#" data-content="Article1" onclick="toggleLinks(this)">Article 1 - Title, Purpose, and Authority </a>
+                <ul class="section" id="ch28sec1">
+                    <li>Sec. 1.0.  Short title.</li>
+                    Sec. 1.1.  Authority. 
+                    Sec. 1.2.  Long title. 
+                    Sec. 1.3.  Purpose.  
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article2" onclick="toggleLinks(this)">Article 2 - Interpretation</a>
+                <ul class="section" id="ch28sec2">
+                    Sec. 2.0.  Interpretation, separability and conflict.
+                    Sec. 2.1.  Definitions. 
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article3" onclick="toggleLinks(this)">Article 3 - Establishment of Districts</a>
+                <ul class="section" id="ch28sec3">
+                    Sec. 3.0.  Application of regulations.
+                    Sec. 3.1.  General regulations. 
+                    Sec. 3.2.  Zoning districts. 
+                    Sec. 3.3.  Zoning map of the City of Olean.
+                    Sec. 3.4.  Interpretation of district boundaries. 
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article4" onclick="toggleLinks(this)">Article 4 - Zoning Use Districts</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 4.0.  Single-Family Residential Use District (R1).
+                    Sec. 4.1.  Single-family/General Residential Use District (R2). 
+                    Sec. 4.2.  General Residential Use District (R3).
+                    Sec. 4.3.  Residential Transition Use District (RT).
+                    Sec. 4.4.  City Center Use District (CC). 
+                    Sec. 4.5.  General Commercial Use District (GC).
+                    Sec. 4.6.  Waterfront Conservation Use District (WC). 
+                    Sec. 4.7.  Industrial Use District (I).
+                    Sec. 4.8.  General Industrial District (I2).
+                    Sec. 4.9.  Special Industrial District (I3).
+                    Sec. 4.10.  through Sec. 4.13. Reserved.
+                    Sec. 4.14.  Use regulation table.
+                    Sec. 4.15.  Activities prohibited in all districts. 
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article5" onclick="toggleLinks(this)">Article 5 - Incentive Zoning</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 5.0.  Intent.
+                    Sec. 5.1.  Applicable to the Industrial (I), General Industrial (12) and City Center (CC) Use Districts.  
+                    Sec. 5.2.  Amenities for which zoning incentives may be offered. 
+                    Sec. 5.3.  Zoning incentives which may be granted.
+                    Sec. 5.4.  Incentive zoning applications.   
+                    Sec. 5.5.  Application review process.
+                    Sec. 5.6.  Public hearings and environmental compliance.
+                    Sec. 5.7.  Final common council action. 
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article6" onclick="toggleLinks(this)">Article 6 - Area and Bulk Regulations Density Control</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 6.0.  Purpose.
+                    Sec. 6.1.  Density control schedule (area and bulk schedule). 
+                    Sec. 6.2.  Corner lots. 
+                    Sec. 6.3.  Projections into required yards. 
+                    Sec. 6.4.  Compliance with maximum residential density.
+                    Sec. 6.5.  Side yard for multi-family dwelling units. 
+                    Sec. 6.6.  Building separations. 
+                    Sec. 6.7.  Exceptions to front yard requirements. 
+                    Sec. 6.8.  General exception to height regulations.
+                    Sec. 6.9.  Exceptions to side yard requirements.  
+                    Sec. 6.10.  Through lots.  
+                    Sec. 6.11.  Transition yard requirements.
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article7" onclick="toggleLinks(this)">Article 7 - Planned Residential District(PR)</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 7.0.  Intent.
+                    Sec. 7.1.  Permitted uses. 
+                    Sec. 7.2.  Dimensional requirements.
+                    Sec. 7.3.  Off-street parking requirements and loading requirements.
+                    Sec. 7.4.  Signage.
+                    Sec. 7.5.  Site plan review. 
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article8" onclick="toggleLinks(this)">Article 8 - Planned Business Disctrict(PB)</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 8.0.  Intent.
+                    Sec. 8.1.  Permitted uses. 
+                    Sec. 8.2.  Dimensional requirements.
+                    Sec. 8.3.  Off-street parking requirements and loading requirements. 
+                    Sec. 8.4.  Signage.
+                    Sec. 8.5.  Site plan review. 
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article9" onclick="toggleLinks(this)">Article 9 - Planning Board: Special Use Permits and Site Plan Review and Approval</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 9.0.  Special uses. 
+                    Sec. 9.1.  Site plan review and approval.
+                    Sec. 9.2.  Appeal.
+                    Sec. 9.3.  Fees for required special use permits or site plan review. 
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article10" onclick="toggleLinks(this)">Article 10 - Development Guidelines and General Provisions</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 10.0.  General. 
+                    Sec. 10.1.  Lots and blocks.
+                    Sec. 10.2.  Streets, roads, and sidewalks.
+                    Sec. 10.3.  Off-street parking requirements. 
+                    Sec. 10.4.  Off-street loading and unloading requirements.
+                    Sec. 10.5.  Accessory building and uses.
+                    Sec. 10.6.  Driveway standards.
+                    Sec. 10.7.  Fences and walls.
+                    Sec. 10.8.  Steep slopes, storm drainage, erosion and sediment control and environmental protection.
+                    Sec. 10.9.  Design.
+                    Sec. 10.10.  Open space, parks and playgrounds.
+                    Sec. 10.11.  Utilities.
+                    Sec. 10.12.  Industrial district regulations.
+                    Sec. 10.13.  Home occupation.
+                    Sec. 10.14.  Satellite TV antennas.
+                    Sec. 10.15.  Townhouse and multi-family developments.
+                    Sec. 10.16.  Gasoline stations, service and repair garages, automobile sales areas.
+                    Sec. 10.17.  Buffer and landscaping requirements.
+                    Sec. 10.18.  Fast food restaurants.
+                    Sec. 10.19.  Drive-in use regulations.
+                    Sec. 10.20.  Commercial parking lots and structures. 
+                    Sec. 10.21.  Swimming pool regulations.
+                    Sec. 10.22.  Adult bookstores, adult entertainment establishments, adult cabarets, adult theaters and adult motion picture theaters.
+                    Sec. 10.23.  Mobile home park development standards.
+                    Sec. 10.24.  Telecommunications facilities.
+                    Sec. 10.25.  Solar energy production facilities.
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article11" onclick="toggleLinks(this)">Article 11 - Signage</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 11.0.  General.
+                    Sec. 11.1.  Signs in residential use districts.
+                    Sec. 11.2.  Signs in commercial use districts.
+                    Sec. 11.4.  Administration and violations.
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article12" onclick="toggleLinks(this)">Article 12 - Non-Conforming Buildings, Uses, and Lots</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 12.0.  Continuation of non-conforming buildings and lots.
+                    Sec. 12.1.  Discontinuance of a non-conforming use. 
+                    Sec. 12.2.  Necessary maintenance and repairs.
+                    Sec. 12.3.  Prior construction.
+                    Sec. 12.4.  Existing undersized lots.
+                    Sec. 12.5.  Reduction in lot area.
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article13" onclick="toggleLinks(this)">Article 13 - General Exceptions</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 13.0.  Public properties. 
+                    Sec. 13.1.  Public utilities. 
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article14" onclick="toggleLinks(this)">Article 14 - Zoning Board of Appeals</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 14.0.  Establishment and duties.
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article15" onclick="toggleLinks(this)">Article 15 - Administration</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 15.0.  Enforcement.
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article16" onclick="toggleLinks(this)">Article 16 - Amendments</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 15.1.  Building permits.
+                    Sec. 15.2.  Certificate of compliance.
+                    Sec. 15.3.  Inspection.
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article17" onclick="toggleLinks(this)">Article 17 - Remedies</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 16.0.  Procedure.
+                    Sec. 16.1.  Advisory report to the common council of the city.
+                    Sec. 16.2.  Petition by owners of 50% of frontage.
+                    Sec. 16.3.  Public notice and hearing. 
+                    Sec. 16.4.  Protest by owners.
+                    Sec. 16.5.  Decision by common council.
+                    Sec. 16.6.  Notification of decision.
+                    Sec. 16.7.  Filing with the secretary of state.
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article18" onclick="toggleLinks(this)">Article 18 - Fee Schedule</a>
+                <ul class="section" id="ch28sec4">
+                    Sec. 17.0.  Complaints of violations.
+                    Sec. 17.1.  Procedure for abatement of violations.
+                    Sec. 17.2.  Alternative penalty.
+                </ul>
+            </li>
+            <li class="articles"><a href="#" data-content="Article19" onclick="toggleLinks(this)">Article 19 - Repeal</a>   
+            </li>
+            <li class="articles"><a href="#" data-content="Article20" onclick="toggleLinks(this)">Article 20 - Effective Date</a>
+            </li>
+            <li class="articles"><a href="#" data-content="Article21" onclick="toggleLinks(this)">Article 21 - Downtown Olean Form-Based Zoning Code</a>
+            </li>
+            <li class="articles"><a href="#" data-content="Article22">Use Regulation Tables</a></li>
         </ul>
     </div>
     <div class="content">
@@ -87,7 +236,7 @@
             Planning and development, ch. 18. 
             Subdivision regulations, ch. 22. 
         </div>
-        <div class="Section1">
+        <div class="Article1">
             <h3>ARTICLE 1</h3>
             <h3>TITLE, PURPOSE, AUTHORITY</h3> 
     
