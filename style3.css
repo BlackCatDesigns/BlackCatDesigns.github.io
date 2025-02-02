@@ -125,7 +125,7 @@
   .content {
     margin-left: auto;
     width: 80%;
-    padding-left: 10px;
+    padding: 0px;
     box-sizing: border-box;
     overflow-y: auto;
   }
