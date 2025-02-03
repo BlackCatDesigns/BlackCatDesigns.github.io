@@ -154,6 +154,29 @@
    overflow-y: auto;
   }
 
+  .HomePage {
+    background-image: url(Downtown\ Image.jpg);
+    background-repeat: no-repeat;
+    height: 800px;
+    width: auto;
+    align-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Franklin Gothic Medium', sans-serif;
+  }
+  
+  .HomeMain {
+    font-size: 64px;
+    background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
+    width: 1880px;
+  }
+
+  .HomeSub {
+    font-size: 32px;
+    background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
+    width: 1880px;
+  }
   /*Main content Styling*/
 
   h2 {
