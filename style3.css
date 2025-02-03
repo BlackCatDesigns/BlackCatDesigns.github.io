@@ -88,25 +88,46 @@
   }
   
   header {
-    width: 100%;
-    height: 130px;
-    align-content: center;
-    text-align: center;
-    background-image: linear-gradient(0deg, rgba(24, 22, 141, 0) 0%, rgba(32, 22, 85, 0.5) 0%);
-  }
-
-  .sidebar {
     position: fixed;
-    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%; 
+    text-align: center;
+    background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
+    display: flex;
+    align-items: center;
+}
+
+.HeaderList {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.CityText {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+    position: fixed;
+    top: 10%; 
+    left: 0;
     width: 20%;
-    height: 100%;
+    height: calc(100vh - 60px); 
     justify-content: space-between;
     background-color: #f5f5f5fd;
     padding: 0px;
     box-sizing: border-box;
-    overflow-y: auto;
+    padding: 20px;
+    overflow-y: auto; 
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  }
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
   ul.ch28 {
     padding-left: 0; 
@@ -122,12 +143,12 @@
     display: none;
   }
 
-.content {
+.main-content {
    margin-left: auto;
    width: 80%;
-   padding-left: 10px;
+   padding-left: 25px;
    padding-right: 0px;
-   padding-top: 0px;
+   padding-top: 9%;
    padding-bottom: 0px;
    box-sizing: border-box;
    overflow-y: auto;
@@ -193,6 +214,13 @@ p.sec9hi {
 p.sec9hisub {
     padding-left: 80px; 
     text-indent: -40px;
+}
+
+.content {
+    display: none;
+}
+.show {
+    display: block;
 }
 
   /* ==========================================================================
