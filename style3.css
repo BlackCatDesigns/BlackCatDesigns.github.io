@@ -166,7 +166,6 @@ li.headerlinks a {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
-  display: flex;
   align-items: center;
 }
 
@@ -189,7 +188,7 @@ ul.ch28 {
    width: 80%;
    padding-left: 25px;
    padding-right: 0px;
-   padding-top: 14%;
+   padding-top: 7.5%;
    box-sizing: border-box;
    overflow-y: auto;
 }
