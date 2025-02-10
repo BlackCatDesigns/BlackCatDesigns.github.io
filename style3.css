@@ -1,3 +1,4 @@
+
 /*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -131,11 +132,11 @@ li.headerlinks a {
 }
 
 .CityText {
-    font-family: 'Franklin Gothic Medium', sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	padding-right: 50px;
 	padding-left:30px;
 	padding-top: 30px;
@@ -157,19 +158,31 @@ li.headerlinks a {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-  ul.ch28 {
+.special {
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
+  display: flex;
+  align-items: center;
+}
+
+ul.ch28 {
     padding-left: 0; 
     margin-left: 0;   
-  }
-  .articles {
+}
+.articles {
     list-style-type: none;
     padding-left: 0; 
     margin-left: 0;      
-  }
+}
 
-  .section {
+.section {
     display: none;
-  }
+}
 
 .main-content {
    margin-left: auto;
@@ -177,12 +190,11 @@ li.headerlinks a {
    padding-left: 25px;
    padding-right: 0px;
    padding-top: 14%;
-   padding-bottom: 0px;
    box-sizing: border-box;
    overflow-y: auto;
-  }
+}
 
-  .HomePage {
+.HomePage {
     background-image: url(Downtown\ Image.jpg);
     background-repeat: no-repeat;
     height: 800px;
@@ -192,22 +204,22 @@ li.headerlinks a {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Franklin Gothic Medium', sans-serif;
-  }
+}
   
-  .HomeMain {
+.HomeMain {
     font-size: 64px;
     background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
     width: 1880px;
-  }
+}
 
-  .HomeSub {
+.HomeSub {
     font-size: 32px;
     background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
     width: 1880px;
-  }
+}
   /*Main content Styling*/
 
-  h2 {
+h2 {
     text-align: center;
 }
 
@@ -267,9 +279,21 @@ p.sec9hisub {
     text-indent: -40px;
 }
 
-.content {
-    display: none;
+
+.Help {
+  display: none;
 }
+
+.About {
+  display: none;
+}
+
+.Contact {
+  display: none;
+}
+
+
+
 .show {
     display: block;
 }
