@@ -1,4 +1,5 @@
 
+
 /*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -86,6 +87,7 @@
      ========================================================================== */
   body {
     font-family: 'Roboto', sans-serif;
+    text-align: justify;
   }
  
   a:link, a:visited, a:hover, a:active {
@@ -180,9 +182,11 @@ ul.ch28 {
 }
 
 .section {
-    display: none;
+    display: block;
 }
-
+.content {
+  display: none;
+}
 .main-content {
    margin-left: auto;
    width: 80%;
