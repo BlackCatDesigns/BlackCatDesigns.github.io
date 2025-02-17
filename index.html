@@ -22,6 +22,8 @@
             <li class="headerlinks"><a href="#" onclick="showContact('Contact')">Contact</a></li>
 			<li class="headerlinks">|</li>
             <li class="headerlinks"><a href="#" onclick="showAbout('About')">About</a></li>
+            <li class="headerlinks">|</li>
+            <li class="headerlinks"><a href="#" onclick="showFeedback('Feedback')">Feedback</a></li>
         </ul>
     </header>
 
@@ -228,7 +230,7 @@
         </ul>
     </div>
     <div class="main-content">
-        <div class="content HomePage">
+        <div class="HomePage">
             <p class="HomeMain">WELCOME TO THE CITY OF OLEAN ZONING LAWS PAGE.</p>
             <p class="HomeSub">Please select an article to the left to view the code.</p>
         </div>
@@ -252,6 +254,25 @@
             <p class="special">ABOUT</p>
             <p>The City of Olean is an amazing little city in the Southern Tier of New York. Building permits are required!</p>    
         </div>
+
+        <div class="Feedback">
+            <p class="special">Feedback</p>
+            <body>
+                <h1>Find an error in the site?</h1>
+                <form name="articleForm" onsubmit="return validateForm()" action="/submit-article" method="post">
+                    <label for="section">Article:</label>
+                    <input type="text" id="section" name="section"><br><br>
+                    
+                    <label for="subsection">Section:</label>
+                    <input type="text" id="subsection" name="subsection"><br><br>
+                    
+                    <label for="content">Describe the error:</label><br>
+                    <textarea id="content" name="content" rows="10" cols="50"></textarea><br><br>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+        </div>
+
         <div class="content Heading">
             <h2>CHAPTER 28</h2> 
             <h2>ZONING</h2> 
