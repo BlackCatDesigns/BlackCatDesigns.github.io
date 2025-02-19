@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>City of Olean - Zoning Laws</title>
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
     <script src="script.js"></script>
     <meta name="description" content="This is the City of Olean code webpage.">
@@ -28,9 +28,12 @@
     </header>
 
     <div class="sidebar">
-        <input type="text" id="searchBox" placeholder="Search sections..." oninput="searchSections()">
+        <input type="text" id="searchBox" placeholder="Search zoning code..." oninput="searchSections()">
         <ul class="ch28">
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec1'); toggleSections('ch28sec1'); return false;">Article 1 - Title, Purpose, and Authority</a>
+            <li class="articles">
+                <label for="ArticleCheckbox1">
+                    <input type="checkbox" id="ArticleCheckbox1" data-article="ch28sec1">
+                </label><a href="#" onclick="toggleSections('ch28sec1'); return false;">Article 1 - Title, Purpose, and Authority</a>
                 <ul class="section" id="ch28sec1">
                     <li><label for="Checkbox10"><input type="checkbox" class="Checkbox" data-target="sec10" id="Checkbox10">Sec. 1.0. Short Title.</label></li>
                     <li><label for="Checkbox11"><input type="checkbox" class="Checkbox" data-target="sec11" id="Checkbox11">Sec. 1.1. Purpose. </label></li>
@@ -38,13 +41,19 @@
                     <li><label for="Checkbox13"><input type="checkbox" class="Checkbox" data-target="sec13" id="Checkbox13">Sec. 1.3. Applicability.</label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec2'), toggleSections('ch28sec2'); return false;">Article 2 - Interpretation</a>
+            <li class="articles">
+                <label for="ArticleCheckbox3">
+                    <input type="checkbox" id="ArticleCheckbox2" data-article="ch28sec2">
+                </label><a href="#" onclick="toggleSections('ch28sec2'); return false;">Article 2 - Interpretation</a>
                 <ul class="section" id="ch28sec2">
                     <li><label for="Checkbox20"><input type="checkbox" class="Checkbox" data-target="sec20" id="Checkbox20">Sec. 2.0.  Interpretation, separability and conflict.</input></label></li>
                     <li><label for="Checkbox21"><input type="checkbox" class="Checkbox" data-target="sec21" id="Checkbox21">Sec. 2.1.  Definitions.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec3'), toggleSections('ch28sec3'); return false;">Article 3 - Establishment of Districts</a>
+            <li class="articles">
+                <label for="ArticleCheckbox2">
+                    <input type="checkbox" id="ArticleCheckbox3" data-article="ch28sec3">
+                </label><a href="#" onclick="toggleSections('ch28sec3'); return false;">Article 3 - Establishment of Districts</a>
                 <ul class="section" id="ch28sec3">
                     <li><label for="Checkbox30"><input type="checkbox" class="Checkbox" data-target="sec30" id="Checkbox30">Sec. 3.0.  Application of regulations.</input></label></li>
                     <li><label for="Checkbox31"><input type="checkbox" class="Checkbox" id="Checkbox31" data-target="sec31">Sec. 3.1.  General regulations.</input></label></li>
@@ -53,7 +62,10 @@
                     <li><label for="Checkbox34"><input type="checkbox" class="Checkbox" id="Checkbox34" data-target="sec34">Sec. 3.4.  Interpretation of district boundaries.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec4'), toggleSections('ch28sec4'); return false;">Article 4 - Zoning Use Districts</a>
+            <li class="articles">
+                <label for="ArticleCheckbox4">
+                    <input type="checkbox" id="ArticleCheckbox4" data-article="ch28sec4">
+                </label><a href="#" onclick="toggleSections('ch28sec4'); return false;">Article 4 - Zoning Use Districts</a>
                 <ul class="section" id="ch28sec4">
                     <li><label for="Checkbox40"><input type="checkbox" class="Checkbox" id="Checkbox40" data-target="sec40">Sec. 4.0.  Single-Family Residential Use District (R1).</input></label></li>
                     <li><label for="Checkbox41"><input type="checkbox" class="Checkbox" id="Checkbox41" data-target="sec41">Sec. 4.1.  Single-family/General Residential Use District (R2).</input></label></li>
@@ -70,7 +82,10 @@
                     <li><label for="Checkbox412"><input type="checkbox" class="Checkbox" id="Checkbox412" data-target="sec415">Sec. 4.15.  Activities prohibited in all districts.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec5'), toggleSections('ch28sec5'); return false;">Article 5 - Incentive Zoning</a>
+            <li class="articles">
+                <label for="ArticleCheckbox5">
+                    <input type="checkbox" id="ArticleCheckbox5" data-article="ch28sec5">
+                </label><a href="#" onclick="toggleSections('ch28sec5'); return false;">Article 5 - Incentive Zoning</a>
                 <ul class="section" id="ch28sec5">
                     <li><label for="Checkbox50"><input type="checkbox" class="Checkbox" id="Checkbox50" data-target="sec50">Sec. 5.0.  Intent.</input></label></li>
                     <li><label for="Checkbox51"><input type="checkbox" class="Checkbox" id="Checkbox51" data-target="sec51">Sec. 5.1.  Applicable to the Industrial (I), General Industrial (12) and City Center (CC) Use Districts.</input></label></li>
@@ -82,7 +97,10 @@
                     <li><label for="Checkbox57"><input type="checkbox" class="Checkbox" id="Checkbox57" data-target="sec57">Sec. 5.7.  Final common council action.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec6'), toggleSections('ch28sec6'); return false;">Article 6 - Area and Bulk Regulations Density Control</a>
+            <li class="articles">
+                <label for="ArticleCheckbox6">
+                    <input type="checkbox" id="ArticleCheckbox6" data-article="ch28sec6">
+                </label><a href="#" onclick="toggleSections('ch28sec6'); return false;">Article 6 - Area and Bulk Regulations Density Control</a>
                 <ul class="section" id="ch28sec6">
                     <li><label for="Checkbox60"><input type="checkbox" class="Checkbox" id="Checkbox60" data-target="sec60">Sec. 6.0.  Purpose.</input></label></li>
                     <li><label for="Checkbox61"><input type="checkbox" class="Checkbox" id="Checkbox61" data-target="sec61">Sec. 6.1.  Density control schedule (area and bulk schedule).</input></label></li>
@@ -98,7 +116,10 @@
                     <li><label for="Checkbox611"><input type="checkbox" class="Checkbox" id="Checkbox611" data-target="sec611">Sec. 6.11.  Transition yard requirements.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec7'), toggleSections('ch28sec7'); return false;">Article 7 - Planned Residential District(PR)</a>
+            <li class="articles">
+                <label for="ArticleCheckbox7">
+                    <input type="checkbox" id="ArticleCheckbox7" data-article="ch28sec7">
+                </label><a href="#" onclick="toggleSections('ch28sec7'); return false;">Article 7 - Planned Residential District(PR)</a>
                 <ul class="section" id="ch28sec7">
                     <li><label for="Checkbox70"><input type="checkbox" class="Checkbox" id="Checkbox70" data-target="sec70">Sec. 7.0.  Intent.</input></label></li>
                     <li><label for="Checkbox71"><input type="checkbox" class="Checkbox" id="Checkbox71" data-target="sec71">Sec. 7.1.  Permitted uses.</input></label></li>
@@ -108,7 +129,10 @@
                     <li><label for="Checkbox75"><input type="checkbox" class="Checkbox" id="Checkbox75" data-target="sec75">Sec. 7.5.  Site plan review.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec8'), toggleSections('ch28sec8'); return false;">Article 8 - Planned Business Disctrict(PB)</a>
+            <li class="articles">
+                <label for="ArticleCheckbox8">
+                    <input type="checkbox" id="ArticleCheckbox8" data-article="ch28sec8">
+                </label><a href="#" onclick="toggleSections('ch28sec8'); return false;">Article 8 - Planned Business Disctrict(PB)</a>
                 <ul class="section" id="ch28sec8">
                     <li><label for="Checkbox80"><input type="checkbox" class="Checkbox" id="Checkbox80" data-target="sec80">Sec. 8.0.  Intent.</input></label></li>
                     <li><label for="Checkbox81"><input type="checkbox" class="Checkbox" id="Checkbox81" data-target="sec81">Sec. 8.1.  Permitted uses.</input></label></li>
@@ -118,7 +142,10 @@
                     <li><label for="Checkbox85"><input type="checkbox" class="Checkbox" id="Checkbox85" data-target="sec85">Sec. 8.5.  Site plan review.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec9'), toggleSections('ch28sec9'); return false;">Article 9 - Planning Board: Special Use Permits and Site Plan Review and Approval</a>
+            <li class="articles">
+                <label for="ArticleCheckbox9">
+                    <input type="checkbox" id="ArticleCheckbox9" data-article="ch28sec9">
+                </label><a href="#" onclick="toggleSections('ch28sec9'); return false;">Article 9 - Planning Board: Special Use Permits and Site Plan Review and Approval</a>
                 <ul class="section" id="ch28sec9">
                     <li><label for="Checkbox90"><input type="checkbox" class="Checkbox" id="Checkbox90" data-target="sec90">Sec. 9.0.  Special uses.</input></label></li>
                     <li><label for="Checkbox91"><input type="checkbox" class="Checkbox" id="Checkbox91" data-target="sec91">Sec. 9.1.  Site plan review and approval.</input></label></li>
@@ -126,7 +153,10 @@
                     <li><label for="Checkbox93"><input type="checkbox" class="Checkbox" id="Checkbox93" data-target="sec93">Sec. 9.3.  Fees for required special use permits or site plan review.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec10'), toggleSections('ch28sec10'); return false;">Article 10 - Development Guidelines and General Provisions</a>
+            <li class="articles">
+                <label for="ArticleCheckbox10">
+                    <input type="checkbox" id="ArticleCheckbox10" data-article="ch28sec10">
+                </label><a href="#" onclick="toggleSections('ch28sec10'); return false;">Article 10 - Development Guidelines and General Provisions</a>
                 <ul class="section" id="ch28sec10">
                     <li><label for="Checkbox100"><input type="checkbox" class="Checkbox" id="Checkbox100" data-target="sec100">Sec. 10.0.  General.</a></li></input></label></li>
                     <li><label for="Checkbox101"><input type="checkbox" class="Checkbox" id="Checkbox101" data-target="sec101">Sec. 10.1.  Lots and blocks.</a></li></input></label></li>
@@ -156,7 +186,10 @@
                     <li><label for="Checkbox1025"><input type="checkbox" class="Checkbox" id="Checkbox1025" data-target="sec1025">Sec. 10.25.  Solar energy production facilities.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec11'), toggleSections('ch28sec11'); return false;">Article 11 - Signage</a>
+            <li class="articles">
+                <label for="ArticleCheckbox11">
+                    <input type="checkbox" id="ArticleCheckbox11" data-article="ch28sec11">
+                </label><a href="#" onclick="toggleSections('ch28sec11'); return false;">Article 11 - Signage</a>
                 <ul class="section" id="ch28sec11">
                     <li><label for="Checkbox110"><input type="checkbox" class="Checkbox" id="Checkbox110" data-target="sec110">Sec. 11.0.  General.</input></label></li>
                     <li><label for="Checkbox111"><input type="checkbox" class="Checkbox" id="Checkbox111" data-target="sec111">Sec. 11.1.  Signs in residential use districts.</input></label></li>
@@ -164,7 +197,10 @@
                     <li><label for="Checkbox113"><input type="checkbox" class="Checkbox" id="Checkbox113" data-target="sec113">Sec. 11.4.  Administration and violations.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec12'), toggleSections('ch28sec12'); return false;">Article 12 - Non-Conforming Buildings, Uses, and Lots</a>
+            <li class="articles">
+                <label for="ArticleCheckbox12">
+                    <input type="checkbox" id="ArticleCheckbo12x" data-article="ch28sec12">
+                </label><a href="#" onclick="toggleSections('ch28sec12'); return false;">Article 12 - Non-Conforming Buildings, Uses, and Lots</a>
                 <ul class="section" id="ch28sec12">
                     <li><label for="Checkbox120"><input type="checkbox" class="Checkbox" id="Checkbox120" data-target="sec120">Sec. 12.0.  Continuation of non-conforming buildings and lots.</input></label></li>
                     <li><label for="Checkbox121"><input type="checkbox" class="Checkbox" id="Checkbox121" data-target="sec121">Sec. 12.1.  Discontinuance of a non-conforming use.</input></label></li>
@@ -174,18 +210,27 @@
                     <li><label for="Checkbox125"><input type="checkbox" class="Checkbox" id="Checkbox125" data-target="sec125">Sec. 12.5.  Reduction in lot area.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec13'), toggleSections('ch28sec13'); return false;">Article 13 - General Exceptions</a>
+            <li class="articles">
+                <label for="ArticleCheckbox13">
+                    <input type="checkbox" id="ArticleCheckbox13" data-article="ch28sec13">
+                </label><a href="#" onclick="toggleSections('ch28sec113'); return false;">Article 13 - General Exceptions</a>
                 <ul class="section" id="ch28sec13">
                     <li><label for="Checkbox130"><input type="checkbox" class="Checkbox" id="Checkbox130" data-target="sec130">Sec. 13.0.  Public properties.</input></label></li>
                     <li><label for="Checkbox131"><input type="checkbox" class="Checkbox" id="Checkbox131" data-target="sec131">Sec. 13.1.  Public utilities.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec14'), toggleSections('ch28sec14'); return false;">Article 14 - Zoning Board of Appeals</a>
+            <li class="articles">
+                <label for="ArticleCheckbox14">
+                    <input type="checkbox" id="ArticleCheckbox14" data-article="ch28sec14">
+                </label><a href="#" onclick="toggleSections('ch28sec14'); return false;">Article 14 - Zoning Board of Appeals</a>
                 <ul class="section" id="ch28sec14">
                     <li><label for="Checkbox140"><input type="checkbox" class="Checkbox" id="Checkbox140" data-target="sec140">Sec. 14.0.  Establishment and duties.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec15'), toggleSections('ch28sec15'); return false;">Article 15 - Administration</a>
+            <li class="articles">
+                <label for="ArticleCheckbox15">
+                    <input type="checkbox" id="ArticleCheckbox15" data-article="ch28sec15">
+                </label><a href="#" onclick="toggleSections('ch28sec15'); return false;">Article 15 - Administration</a>
                 <ul class="section" id="ch28sec15">
                     <li><label for="Checkbox150"><input type="checkbox" class="Checkbox" id="Checkbox150" data-target="sec150">Sec. 15.0.  Enforcement.</input></label></li>
                     <li><label for="Checkbox151"><input type="checkbox" class="Checkbox" id="Checkbox151" data-target="sec151">Sec. 15.1.  Building permits.</input></label></li>
@@ -193,7 +238,10 @@
                     <li><label for="Checkbox153"><input type="checkbox" class="Checkbox" id="Checkbox153" data-target="sec153">Sec. 15.3.  Inspection.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec16'), toggleSections('ch28sec16'); return false;">Article 16 - Amendments</a>
+            <li class="articles">
+                <label for="ArticleCheckbox16">
+                    <input type="checkbox" id="ArticleCheckbox16" data-article="ch28sec16">
+                </label><a href="#" onclick="toggleSections('ch28sec16'); return false;">Article 16 - Amendments</a>
                 <ul class="section" id="ch28sec16">
                     <li><label for="Checkbox160"><input type="checkbox" class="Checkbox" id="Checkbox160" data-target="sec160">Sec. 16.0.  Procedure.</input></label></li>
                     <li><label for="Checkbox161"><input type="checkbox" class="Checkbox" id="Checkbox161" data-target="sec161">Sec. 16.1.  Advisory report to the common council of the city.</input></label></li>
@@ -205,24 +253,60 @@
                     <li><label for="Checkbox167"><input type="checkbox" class="Checkbox" id="Checkbox167" data-target="sec167">Sec. 16.7.  Filing with the secretary of state.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec17'), toggleSections('ch28sec17'); return false;">Article 17 - Remedies</a>
+            <li class="articles">
+                <label for="ArticleCheckbox17">
+                    <input type="checkbox" id="ArticleCheckbox17" data-article="ch28sec17">
+                </label><a href="#" onclick="toggleSections('ch28sec17'); return false;">Article 17 - Remedies</a>
                 <ul class="section" id="ch28sec17">
                         <li><label for="Checkbox170"><input type="checkbox" class="Checkbox" id="Checkbox170" data-target="sec170">Sec. 17.0.  Complaints of violations.</input></label></li>
                         <li><label for="Checkbox171"><input type="checkbox" class="Checkbox" id="Checkbox171" data-target="sec171">Sec. 17.1.  Procedure for abatement of violations.</input></label></li>
                         <li><label for="Checkbox172"><input type="checkbox" class="Checkbox" id="Checkbox172" data-target="sec172">Sec. 17.2.  Alternative penalty.</input></label></li>
                 </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec18'); return false;">Article 18 - Fee Schedule</a>   
+            <li class="articles">
+                <label for="ArticleCheckbox18">
+                    <input type="checkbox" id="ArticleCheckbox18" data-article="ch28sec18">
+                </label><a href="#" onclick="toggleSections('ch28sec18'); return false;">Article 18 - Fee Schedule</a>
+                <ul class="section" id="ch28sec18">
+                        <li><label for="Checkbox180"><input type="checkbox" class="Checkbox" id="Checkbox180" data-target="sec180">Sec. 18.0.  Fee Schedule.</input></label></li>
+                </ul>
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec19'); return false;">Article 19 - Repeal</a>   
+            <li class="articles">
+                <label for="ArticleCheckbox19">
+                    <input type="checkbox" id="ArticleCheckbox19" data-article="ch28sec19">
+                </label><a href="#" onclick="toggleSections('ch28sec19'); return false;">Article 19 - Repeal</a>
+                <ul class="section" id="ch28sec19">
+                        <li><label for="Checkbox190"><input type="checkbox" class="Checkbox" id="Checkbox190" data-target="sec190">Sec. 19.0.  Repeal.</input></label></li>
+                </ul> 
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec20'); return false;">Article 20 - Effective Date</a>
+            <li class="articles">
+                <label for="ArticleCheckbox19">
+                    <input type="checkbox" id="ArticleCheckbox20" data-article="ch28sec20">
+                </label><a href="#" onclick="toggleSections('ch28sec20'); return false;">Article 20 - Effective Date</a>
+                <ul class="section" id="ch28sec20">
+                        <li><label for="Checkbox200"><input type="checkbox" class="Checkbox" id="Checkbox200" data-target="sec200">Sec. 20.0.  Effective Date.</input></label></li>
+                </ul> 
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28sec21'); return false;">Article 21 - Downtown Olean Form-Based Zoning Code</a>
+            <li class="articles">
+                <label for="ArticleCheckbox21">
+                    <input type="checkbox" id="ArticleCheckbox21" data-article="ch28sec21">
+                </label><a href="#" onclick="toggleSections('ch28sec21'); return false;">Article 21 - Downtown Olean Form-Based Zoning Code</a>
+                <ul class="section" id="ch28sec21">
+                        <li><label for="Checkbox210"><input type="checkbox" class="Checkbox" id="Checkbox210" data-target="sec210">Sec. 21.0.  Downtown Olean Form-Based Zoning Code.</input></label></li>
+                </ul> 
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ZoningMap'); return false;">City of Olean Zoning Map</a>
+            <li class="articles">
+                <label for="ArticleCheckboxZoning">
+                    <input type="checkbox" id="ArticleCheckboxZoning" data-article="ZoningMap">
+                </label><a href="#" onclick="toggleSections('ZoningMap'); return false;">City of Olean Zoning Map</a>
+                <ul class="section" id="ZoningMap">
+                        <li><label for="CheckboxZM"><input type="checkbox" class="Checkbox" id="CheckboxZM" data-target="ZoningMap">City of Olean - Zoning Map.</input></label></li>
+                </ul> 
             </li>
-            <li class="articles"><a href="#" onclick="getArticle('ch28UseRegulationTable'); return false;">Use Regulation Tables</a>
+            <li class="articles">
+                <label for="ArticleCheckboxURT">
+                    <input type="checkbox" id="ArticleCheckboxURT" data-article="ch28UseRegulationTable">
+                </label><a href="#" onclick="toggleSections('ch28UseRegulationTable'); return false;">Use Regulation Tables</a>
                 <ul class="section" id="ch28UseRegulationTable">
                     <li><label for="Checkbox220"><input type="checkbox" class="Checkbox" id="Checkbox220" data-target="sec220">Use Regulation Tables</input></label><li>
                 </ul>
@@ -273,24 +357,22 @@
                 </form>
         </div>
 
-        <div class="content Heading">
-            <h2>CHAPTER 28</h2> 
-            <h2>ZONING</h2> 
-            <b>Editor's note—Local Law No. 1-00, §§ 1.0—17.2, and arts. 18—20, adopted Jan. 10,</b>
-            <b>2000, amended chapter 28 in its entirety to read as herein set out. Formerly, chapter</b>
-            <b>28 pertained to similar subject matter. See the Code Comparative Table.</b>   
-            <h5>CROSS REFERENCES</h5>
-            Signs, § 3-21 et seq. 
-            Buildings, building regulations and fire prevention, ch. 6. 
-            Flood damage prevention, ch. 9. 
-            Historic preservation, ch. 11. 
-            Junkyards, § 13-201 et seq. 
-            Planning and development, ch. 18. 
-            Subdivision regulations, ch. 
-        </div>
         <div class="Article1">
               
             <div id="sec10" class="content" style="display: none;">
+                <h2>CHAPTER 28</h2> 
+                <h2>ZONING</h2> 
+                <b>Editor's note—Local Law No. 1-00, §§ 1.0—17.2, and arts. 18—20, adopted Jan. 10,</b>
+                <b>2000, amended chapter 28 in its entirety to read as herein set out. Formerly, chapter</b>
+                <b>28 pertained to similar subject matter. See the Code Comparative Table.</b>   
+                <h5>CROSS REFERENCES</h5>
+                Signs, § 3-21 et seq. 
+                Buildings, building regulations and fire prevention, ch. 6. 
+                Flood damage prevention, ch. 9. 
+                Historic preservation, ch. 11. 
+                Junkyards, § 13-201 et seq. 
+                Planning and development, ch. 18. 
+                Subdivision regulations, ch. 
                 <h3>ARTICLE 1</h3>
                 <h3>TITLE, PURPOSE, AUTHORITY</h3> 
                 <h6 class="sec1">Sec. 1.0.  Short title.</h6>
@@ -5691,6 +5773,7 @@
         </div>
         <div class="ZoningMap">
             <div id="sec230" class="content" style="display: none;">
+                <p class="special">CITY OF OLEAN - ZONING MAP/p>
                 <img src="Olean-Zoning-Map.png" alt="Zoning Map" style="max-width: 100%; height: auto;">
             </div>
         </div>
