@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("[id^='ArticleCheckbox']").forEach(articleCheckbox => {
         articleCheckbox.addEventListener("change", function () {
             const articleClass = this.getAttribute("data-article");
-            handleArticleCheckboxChange(articleClass, this.checked);
+            checkboxChange(articleClass, this.checked);
             document.querySelectorAll(".Help, .About, .HomePage, .Contact, .Feedback").forEach(el => el.style.display = "none");;
         });
     });
 
-    function handleArticleCheckboxChange(articleClass, isChecked) {
+    function checkboxChange(articleClass, isChecked) {
         const article = document.getElementById(articleClass);
         if (article) {
             article.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
