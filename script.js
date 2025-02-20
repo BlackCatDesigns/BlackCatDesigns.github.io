@@ -35,24 +35,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function searchSections() {
-    document.querySelectorAll(".Help").forEach(el => el.style.display = "none");
-    document.querySelectorAll(".About").forEach(el => el.style.display = "none");
-    document.querySelectorAll(".HomePage").forEach(el => el.style.display = "none");
-    document.querySelectorAll(".Contact").forEach(el => el.style.display = "none");
-    document.querySelectorAll(".Feedback").forEach(el => el.style.display = "none");
+    document.querySelectorAll(".Help, .About, .HomePage, .Contact, .Feedback").forEach(el => el.style.display = "none");
     const searchText = document.getElementById("searchBox").value.toLowerCase();
     document.querySelectorAll(".content").forEach(section => {
         section.style.display = "none";
     });
+    if (searchText.trim() === "") {
+        document.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
+            checkbox.checked = false;
+        });
+        return; 
+    }
     document.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
         const targetId = checkbox.getAttribute("data-target");
         const section = document.getElementById(targetId);
-        
         if (section && section.textContent.toLowerCase().includes(searchText)) {
-            section.style.display = "block";  
-            checkbox.checked = true;          
+            section.style.display = "block";
+            checkbox.checked = true;
         } else {
-            checkbox.checked = false;       
+            checkbox.checked = false;
         }
     });
 }
