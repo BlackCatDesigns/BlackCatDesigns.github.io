@@ -35,30 +35,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function searchSections() {
-    document.querySelectorAll(".Help, .About, .HomePage, .Contact, .Feedback").forEach(el => el.style.display = "none");
+    document.querySelectorAll(".Help").forEach(el => el.style.display = "none");
+    document.querySelectorAll(".About").forEach(el => el.style.display = "none");
+    document.querySelectorAll(".HomePage").forEach(el => el.style.display = "none");
+    document.querySelectorAll(".Contact").forEach(el => el.style.display = "none");
+    document.querySelectorAll(".Feedback").forEach(el => el.style.display = "none");
     const searchText = document.getElementById("searchBox").value.toLowerCase();
-
     document.querySelectorAll(".content").forEach(section => {
         section.style.display = "none";
-        section.innerHTML = section.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/gi, "$1");
     });
-
     document.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
         const targetId = checkbox.getAttribute("data-target");
         const section = document.getElementById(targetId);
         
-        if (section) {
-            const text = section.textContent.toLowerCase();
-
-            if (searchText && text.includes(searchText)) {
-                section.style.display = "block"; 
-                checkbox.checked = true; 
-                
-                const regex = new RegExp(`(${searchText})`, "gi");
-                section.innerHTML = section.innerHTML.replace(regex, `<span class="highlight">$1</span>`);
-            } else {
-                checkbox.checked = false; 
-            }
+        if (section && section.textContent.toLowerCase().includes(searchText)) {
+            section.style.display = "block";  
+            checkbox.checked = true;          
+        } else {
+            checkbox.checked = false;       
         }
     });
 }
