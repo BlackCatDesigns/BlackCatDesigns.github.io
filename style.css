@@ -1,5 +1,6 @@
 
 
+
 /*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -100,7 +101,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 15%; 
+    height: 15%;
     text-align: center;
     background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
     display: flex;
@@ -146,16 +147,15 @@ li.headerlinks a {
 
 .sidebar {
     position: fixed;
-    top: 15%; 
+    top: 15%;
     left: 0;
     width: 20%;
-    height: calc(100vh - 60px); 
+    height: calc(100vh - 60px);
     justify-content: space-between;
     background-color: #f5f5f5fd;
-    padding: 0px;
-    box-sizing: border-box;
     padding: 20px;
-    overflow-y: auto; 
+    box-sizing: border-box;
+    overflow-y: auto;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -188,20 +188,19 @@ ul.ch28 {
   display: none;
 }
 .main-content {
-   margin-left: auto;
-   width: 80%;
-   padding-left: 25px;
-   padding-right: 0px;
-   padding-top: 7.5%;
-   box-sizing: border-box;
-   overflow-y: auto;
+    margin-left: 20%; /* Adjust margin to match sidebar width */
+    width: 80%;
+    padding: 25px;
+    padding-top: 7.5%;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .HomePage {
     background-image: url(Downtown\ Image.jpg);
     background-repeat: no-repeat;
     height: 800px;
-    width: 1880px;
+    width: 100%;
     align-content: center;
     text-align: center;
     color: white;
@@ -395,6 +394,46 @@ p.sec9hisub {
      These examples override the primary ('mobile first') styles.
      Modify as content requires.
      ========================================================================== */
+  
+    @media (max-width: 1200px) {
+    .sidebar {
+        width: 25%;
+    }
+    .main-content {
+        margin-left: 25%;
+        width: 75%;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 30%;
+    }
+    .main-content {
+        margin-left: 30%;
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        box-shadow: none;
+    }
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding-top: 15%;
+    }
+    header {
+        height: 10%;
+    }
+  
+}
+  
   
   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
