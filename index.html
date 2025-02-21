@@ -42,7 +42,7 @@
                 </ul>
             </li>
             <li class="articles">
-                <label for="ArticleCheckbox3">
+                <label for="ArticleCheckbox2">
                     <input type="checkbox" id="ArticleCheckbox2" data-article="ch28sec2">
                 </label><a href="#" onclick="toggleSections('ch28sec2'); return false;">Article 2 - Interpretation</a>
                 <ul class="section" id="ch28sec2">
@@ -51,7 +51,7 @@
                 </ul>
             </li>
             <li class="articles">
-                <label for="ArticleCheckbox2">
+                <label for="ArticleCheckbox3">
                     <input type="checkbox" id="ArticleCheckbox3" data-article="ch28sec3">
                 </label><a href="#" onclick="toggleSections('ch28sec3'); return false;">Article 3 - Establishment of Districts</a>
                 <ul class="section" id="ch28sec3">
@@ -199,7 +199,7 @@
             </li>
             <li class="articles">
                 <label for="ArticleCheckbox12">
-                    <input type="checkbox" id="ArticleCheckbo12x" data-article="ch28sec12">
+                    <input type="checkbox" id="ArticleCheckbox12" data-article="ch28sec12">
                 </label><a href="#" onclick="toggleSections('ch28sec12'); return false;">Article 12 - Non-Conforming Buildings, Uses, and Lots</a>
                 <ul class="section" id="ch28sec12">
                     <li><label for="Checkbox120"><input type="checkbox" class="Checkbox" id="Checkbox120" data-target="sec120">Sec. 12.0.  Continuation of non-conforming buildings and lots.</input></label></li>
@@ -213,7 +213,7 @@
             <li class="articles">
                 <label for="ArticleCheckbox13">
                     <input type="checkbox" id="ArticleCheckbox13" data-article="ch28sec13">
-                </label><a href="#" onclick="toggleSections('ch28sec113'); return false;">Article 13 - General Exceptions</a>
+                </label><a href="#" onclick="toggleSections('ch28sec13'); return false;">Article 13 - General Exceptions</a>
                 <ul class="section" id="ch28sec13">
                     <li><label for="Checkbox130"><input type="checkbox" class="Checkbox" id="Checkbox130" data-target="sec130">Sec. 13.0.  Public properties.</input></label></li>
                     <li><label for="Checkbox131"><input type="checkbox" class="Checkbox" id="Checkbox131" data-target="sec131">Sec. 13.1.  Public utilities.</input></label></li>
@@ -336,17 +336,13 @@
         </div>
         <div class="About">
             <p class="special">ABOUT</p>
-            <p>Meet our team: <br><img src="Hadley.jpg" width="300px" height="300px" alt="Chief Hadley Lou"> <br> Chief Hadley "Hadders" Lou <br>
-                <br><img src="Piper.jpg" width="300px" height="300px" alt="Enforcement Officer Piper"> <br> Enforcement Office Piper <br>
-                <br><img src="Wilson.jpg" width="300px" height="300px" alt="Enforcement Officer Wilson"> <br> Enforcement Office Wilson <br>
-                <br>Building permits are required!
-            </p>    
+            <p>The City of Olean is an amazing little city in the Southern Tier of New York. Building permits are required!</p>    
         </div>
 
         <div class="Feedback">
             <p class="special">Feedback</p>
             <body>
-                <h1>Find an error? Let us know!</h1>
+                <h1>Find an error in the site?</h1>
                 <form name="articleForm" onsubmit="return validateForm()" action="/submit-article" method="post">
                     <label for="section">Article:</label>
                     <input type="text" id="section" name="section"><br><br>
@@ -361,8 +357,7 @@
                 </form>
         </div>
 
-        <div class="Article1">
-              
+        <div class="Article1"> 
             <div id="sec10" class="content" style="display: none;">
                 <h2>CHAPTER 28</h2> 
                 <h2>ZONING</h2> 
@@ -421,7 +416,6 @@
                 Plan of the City of Olean on December 10, 1990.
             </div>  
         </div>  
-
         <div class="Article2">   
             <div id="sec20" class="content" style="display: none;">
                 <h3>ARTICLE 2</h3>
@@ -2951,18 +2945,22 @@
             </div>  
             <div id="sec63" class="content" style="display: none;">
                 <h6>Sec. 6.3.  Projections into required yards.</h6>
-                6.3.1 The following projections into required yards are permitted:
+                <p class="sec6hi">6.3.1 The following projections into required yards are permitted:</p>
                 <ul>
                     <li>1. Awnings or movable canopies and overhangs six feet into any yard.</li>
                     <li>2. Cornices, eaves, retaining walls and roofs three feet into any yard.</li>
                 </ul>
-                6.3.2 Equipment needed for the operation of active or passive solar energy systems may
-                be approved within required yard setbacks subject to site plan approval.
-                6.3.3 Any open or enclosed porch, deck or attached carport or garage shall be considered
-                a part of the building in the determination of the size of the required yard or lot
-                coverage. Paved terraces which are not covered shall not be considered a part of the
-                building.
-                6.3.4 Accessory uses and buildings may be located in accordance with section 10.5.
+                <p class="sec6hi">
+                    6.3.2 Equipment needed for the operation of active or passive solar energy systems may
+                    be approved within required yard setbacks subject to site plan approval.
+                </p>
+                <p class="sec6hi">
+                    6.3.3 Any open or enclosed porch, deck or attached carport or garage shall be considered
+                    a part of the building in the determination of the size of the required yard or lot
+                    coverage. Paved terraces which are not covered shall not be considered a part of the
+                    building.
+                </p>
+                <p class="sec6hi">6.3.4 Accessory uses and buildings may be located in accordance with section 10.5.</p>
             </div>     
             <div id="sec64" class="content" style="display: none;">
                 <h6>Sec. 6.4.  Compliance with maximum residential density.</h6>
@@ -3041,7 +3039,6 @@
             </div> 
         </div>
         <div class="Article7">
-                 
                 <div id="sec70" class="content" style="display: none;">
                     <h3>ARTICLE 7 </h3>
                     <h3>PLANNED RESIDENTIAL DISTRICT (PR)</h3>  
@@ -3242,10 +3239,10 @@
         <div class="Article9">
               
                 <div id="sec90" class="content" style="display: none;">
-                    <h6>Sec. 9.0.  Special uses.  </h6>
+                    
                     <h3>ARTICLE 9</h3>
                     <h3>PLANNING BOARD: SPECIAL USE PERMITS AND SITE PLAN REVIEW AND APPROVAL</h3>
-                    
+                    <h6>Sec. 9.0.  Special uses.  </h6>
                     Pursuant to the city laws and in accordance with the general City Law of the State of 
                     New York, as amended, the city shall have a planning board. The planning board will 
                     consist of seven members appointed by the mayor with the approval of a majority of the 
@@ -5696,31 +5693,1092 @@
             </div>
         </div>
         <div class="Article11">
-            <div id="sec10" class="content" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div id="sec110" class="content" style="display: none;">
+                <h3>ARTICLE 11 </h3>
+                <h3>SIGNAGE </h3>  
+                <h6>Sec. 11.0.  General. [L.L. No. 4-02, § 1, 10-22-2002]    </h6>
+                <p class="sec11hi">
+                    11.0.1 Intent. The purpose of this article is to promote and protect the public health,
+                    welfare and safety by regulating existing and proposed outdoor advertising, outdoor
+                    advertising signs and outdoor signs of all types. It is intended to protect property
+                    values, create a more attractive economic and business climate, enhance and protect
+                    the physical appearance of the community, preserve the scenic and natural beauty
+                    of designated areas, and provide a more enjoyable and pleasing community. It is
+                    further intended hereby to reduce sign or advertising distractions and obstructions
+                    that may contribute to traffic accidents, reduce hazards that may be caused by signs
+                    overhanging or projecting over public rights-of-way, provide more open space, and
+                    curb the deterioration of natural beauty and community environment.
+                </p>   
+                <p class="sec11hi">
+                    11.0.2 Scope. This article by its terms applies to all signs within the city excepting those
+                    signs erected and maintained within disposition parcels located in the neighborhood
+                    development area of the Urban Renewal Plan for the city.
+                </p>   
+                <p class="sec11hi">11.0.3 Signs restricted.   </p>
+                <ul>
+                    <li>
+                        1. The construction, erection, alteration, reconstruction, display, ownership,
+                        maintenance or operation of any sign within the city except as provided by
+                        this article is hereby prohibited.
+                    </li>
+                    <li>
+                        2. Signposts are specifically prohibited from the public right-of-way with the
+                        exception of those that are necessary or recommended by the State of New
+                        York Manual of Uniform Traffic Control Devices.
+                    </li>
+                    <li>
+                        3. Signs overhanging the public right-of-way are prohibited except in the city
+                        center and general commercial zones.
+                    </li>
+                    <li>4. Signs judged obscene by the zoning board are prohibited.</li>
+                    <li>
+                        5. No electric sign or electrically illuminated sign, or any sign board, signpost,
+                        portion of any advertising nature or otherwise shall be permitted or allowed to
+                        remain on the sidewalk nor on any portion of the city streets.
+                    </li>
+                </ul>
+
+                <p class="sec11hi">
+                    11.0.4 Institutional signs. Institutional signs shall not exceed 32 square feet in size nor
+                    shall there be more than one such sign per institution.
+                </p>
+
+                <p class="sec11hi">
+                    11.0.5 Temporary banners within rights-of-way. Signs, other than official street or traffic
+                    signs, shall not be erected within the right-of-way lines of any street, except that
+                    temporary banners may be permitted for festivals or special events with the
+                    requirement that special permits for such banners be issued by the mayor and
+                    common council of the city.
+                </p>   
             </div>
+
+            <div id="sec111" class="content" style="display: none;">
+                <h6>Sec. 11.1.  Signs in residential use districts.  </h6>
+                Signs in the R1 Single-family Residential, R2 Single-family/General Residential, R3
+                General Residential and RT Residential Transition use districts shall conform to the
+                following regulations:
+                <p class="sec11hi">
+                    11.1.1 Identification signs. Identification signs shall be permitted as an accessory use in
+                    any residential district as follows:
+                </p>
+                <ul>
+                    <li>
+                        1. Customary professional or home occupation identification signs not over two
+                        square feet in size, related solely to the profession or home occupation
+                        conducted on the premises by a resident thereof.
+                    </li>
+                    <li>
+                        2.  No more than one such identification sign shall be permitted for each
+                        professional or other person so engaged and residing in the premises; but if a
+                        dwelling has frontage on more than one street, an additional identification sign
+                        shall be permitted for each additional frontage.
+                    </li>
+                    <li>
+                        3. Such identification sign may be affixed to the face of the building or may be
+                        erected on a post not over four feet high, located in the yard but at least five
+                        feet from the property line or 20 feet from street pavement, whichever is
+                        greater.
+                    </li>
+                    <li>4. The sign may not be illuminated.</li>
+                    <li>5. A permit is required; however, no fee will be charged.</li>
+                </ul>
+                
+                <p class="sec11hi">11.1.2 Bulletin boards.</p>
+                <ul>
+                    <li>
+                        1. Permanent bulletin boards or similar announcement signs are allowed only for
+                        churches and other nonprofit institutions. They may not exceed 20 square feet
+                        in gross area and shall be located either on the face of the building or on a post
+                        or posts at least five feet from the property line. One such sign shall be
+                        permitted for each street frontage.
+                    </li>
+                    <li>
+                        2. Signs may be illuminated by night by back lighting or by direct lighting
+                        provided the latter is so screened as not to be visible from an adjacent
+                        residence.
+                    </li>
+                    <li>3. A permit is required; however, no fee will be charged.</li>
+                </ul>
+                
+                <p class="sec11hi">
+                    11.1.3 Temporary signs. Temporary "For Sale" or "To Let" signs relating to the premises
+                    and containing the name, address and telephone number of the owner or authorized
+                    agent, or both, and not exceeding six square feet in area in the aggregate shall be
+                    permitted. One such sign shall be permitted for each street frontage and may not be
+                    illuminated. Temporary signs must be removed within 48 hours after the intent of
+                    business of the sign is complete. See section 11.0.3. No fee will be charged for this
+                    sign.
+                </p>
+                <p class="sec11hi">
+                    11.1.4 Flags, civic insignia. Flags, flagpoles, badges, insignia of any government or
+                    government agency, or any civic, charitable, religious, patriotic, fraternal or similar
+                    organization shall be considered as being signs and subject to all provisions of this
+                    article except that no fee will be charged.
+                </p>
+                <p class="sec11hi">
+                    11.1.5 Attaching to trees, poles or structures. It shall be unlawful for any person to paint,
+                    post, place or fix any business or commercial advertisement, paper, handbills or
+                    circulars, or cause the same to be done, on or to any curbstone, flagstone or any
+                    other portion of any sidewalk or street, or upon any tree, lamppost, hitching post,
+                    telegraph post, telegraph pole, telephone pole, hydrant, bridge or any other structure
+                    within the limits of the city.
+                </p>
+            </div>    
+            <div id="sec112" class="content"  style="display: none;">
+                <h6>Sec. 11.2.  Signs in commercial use districts. [L.L. No. 5-02, § 1, 10-22-2002]   </h6>
+                <p class="sec11hi">
+                    11.2.0 Generally. Signs in the CC City Center and GC General Commercial use districts
+                    shall conform to the following regulations:
+                </p>
+                <ul>
+                    <li>
+                        1. Permits required. A sign permit shall be required before any sign or billboard
+                        may be erected, altered, reconstructed or displayed within the city.
+                    </li>
+                    <li>
+                        2.  Application for permit. Written application shall be made to the code
+                        enforcement officer on a form provided by the code enforcement officer and
+                        shall be accompanied by complete plans and specifications showing the
+                        construction, method of support and materials to be used. Application may be
+                        made by the owner or by the lessee of the property upon which such sign is to
+                        be placed. The code enforcement officer may require the plans and
+                        specifications be signed by a professional engineer or architect registered in
+                        the state.
+                    </li>
+                    <li>
+                        3. Permit fees. Each application shall be accompanied by a fee as established by
+                        the common council which may be amended or modified from time to time.
+                        The code enforcement officer of the city may require proof of the monetary
+                        value of sign. Licensed signs at the time of the enactment of this article must
+                        obtain permits under the provisions of this article upon expiration of their
+                        licenses. All other signs within the city must comply with the requirements of
+                        this article on the effective date of its enactment.
+                        <p>
+                            Upon the approval of the code enforcement officer of such application and of the
+                            place and manner of erecting the sign therein mentioned, and upon his writing or
+                            stamping thereon the amount of the fee required for the sign applied for, the applicant
+                            shall pay to the city clerk the fee prescribed by this division, and thereupon the city clerk
+                            shall issue to the applicant a license for the sign applied for.
+                            Licenses shall be issued for a period of three years. New installations approved
+                            will be for three-year periods following the issuance of a permit; however, construction
+                            of an approved sign must be commenced within 30 days after the issuance of the permit
+                            and completed within 60 days thereafter.
+                        </p>
+                        <p>
+                            License fees for the erection or maintenance of signs shall be established by the
+                            mayor and common council of the city by resolution from time to time.
+                            Liability insurance must be obtained by the owner of a sign prior to approval by
+                            the code enforcement officer. Minimum liability coverage is $10,000 property damage,
+                            and $100,000 personal injury. All liability insurance policies shall be approved by the
+                            city attorney prior to issuance of a sign permit.
+                        </p>
+                    </li>
+                    <li>
+                        4. Temporary permits. Temporary signs shall require a permit from the code
+                        enforcement officer, but a fee will not be required.
+                    
+                        A permit for a temporary sign may be issued for a period not exceeding 90 days;
+                        and such sign shall be removed within 24 hours after expiration unless an extension of
+                        time, not exceeding 30 days, shall have been granted in writing by the code enforcement
+                        officer.
+                        Materials, except frames, used in the construction of temporary signs may be of
+                        light-weight material. Temporary signs shall conform to all other applicable provisions of
+                        this article.
+                    </li>
+                    <li>
+                        5. Unsafe, unlawful and deteriorating signs. Whenever it shall appear to the code
+                        enforcement officer that any sign has been constructed or erected or is being
+                        maintained in violation of the terms of this article, or is unsafe or insecure, or
+                        is a menace to the public, or has been allowed to deteriorate, he shall give
+                        written notifications to the property owner and/or tenant. Said sign shall be
+                        removed or repaired and placed in a safe condition within 10 days after receipt
+                        of the written notification. If the foregoing is not complied with, the city will
+                        have the sign in question removed and the cost added to the property owner's
+                        tax bill.
+                        In the event a sign has been damaged and presents an immediate threat to the
+                        public, the code enforcement officer may order the immediate removal of said sign and
+                        take appropriate action to protect the public and recover costs. Any time a business goes
+                        out of business or moves, the owner or company shall remove all signs of said business.
+                    </li>
+                    <li>
+                        6. Sign mounting. All exterior signs shall be permanently mounted and securely
+                        anchored.
+                    </li>
+                    <li>
+                        7. Restrictions. Signs and billboards shall not in any way obstruct the required
+                        door or window area of any building or structure.
+                        <ul>
+                            <li>Signs shall not be attached to or placed upon any portion of a fire escape.</li>
+                            <li>
+                                Signs shall not be erected that will in any way interfere with the activities of the
+                                fire department.
+                            </li>
+                            <li>
+                                Signs constructed or erected after the adoption of this zoning law shall not be
+                                rotating or contain any moving parts.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        8. Traffic control signs. Signs necessary for traffic control on private property
+                        and containing no advertising may be erected, not to exceed an area of 12
+                        square feet per sign.
+                    </li>
+                    <li>
+                        9. Exemptions. The provisions of this article shall not apply to the following
+                        signs:
+                        <ul>
+                            <li>a. Traffic signs erected by governmental bodies.</li>
+                            <li>b. Railroad warning signs.</li>
+                            <li>c. Municipal signs.</li>
+                            <li>
+                                d. Memorial signs or tablets, names of buildings and date of erection when
+                                cut in any masonry surface or when constructed of bronze or other
+                                combustible [non-combustible] materials.
+                            </li>
+                            <li>
+                                e. Occupational signs denoting only the name and profession of an
+                                occupant in commercial buildings and the name and nature of the
+                                occupancy in public and institutional buildings. Such signs shall not
+                                exceed two square feet in area.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        10. Illumination. Signs may be illuminated at night by back lighting or direct
+                        lighting only provided the latter is so screened as not to cast any direct light
+                        upon any residence. No sign or lighting device shall be of the flashing,
+                        intermittent or reciprocating type.
+                        <p>
+                            Illuminated signs must bear the National Underwriters seal of approval or must
+                            be inspected and approved by the city electrical inspector.
+                        </p>
+                    </li>
+                </ul>
+                
+                <p class="sec11hi">
+                    11.2.1 Types of signs allowed. Each business establishment shall be allowed the
+                    following types of signs only and which shall be installed at the business location
+                    only. However, ground signs and pole or pylon signs may not be used in
+                    combination. Further, any area allowed in a ground sign or a pole or pylon type
+                    shall be deducted from the total area allowed under section 11.2.2, "Size
+                    limitations."
+                </p>
+                <ul>
+                    <li>
+                        1. Wall sign. A sign attached to, erected against or painted on the wall of a
+                        building or structure, with the exposed face of the sign in a plane parallel to
+                        the plane of the wall.
+                    </li>
+                    <li>2. Ground sign. A detached sign erected upon or supported by the ground.</li>
+                    <li>
+                        3. Pole or pylon sign. A sign supported by or suspended from a free-standing
+                        column of concrete, structural steel, aluminum pipe or structural aluminum.
+                    </li>
+                    <li>
+                        4. Projection signs. Each establishment in the city center and general commercial
+                        zones, shall be permitted one hanging sign for each frontage on a public right
+                        of-way. Such signs shall not exceed 20 square feet in area per face nor exceed
+                        24 inches from sign face to sign face. The bottom of such sign shall be a
+                        maximum of 13 feet above the sidewalk and shall not extend into any access
+                        driveways intended for service or emergency vehicles.
+                    </li>
+                </ul>
+                
+                <p class="sec11hi">
+                    11.2.2 Size limitations. The total display area of all signs, including wall, ground, pole,
+                    pylon and window, permitted upon a single lot shall be determined as follows:
+                </p>
+                <ul>
+                    <li>
+                        1. On an interior lot, two square feet of display area for each lineal foot of
+                        building frontage facing the main street or highway.
+                    </li>
+                    <li>
+                        2. On a corner lot where building fronts on a second street, additional signs must
+                        be approved by the zoning board.
+                    </li>
+                </ul>
+                
+                <p class="sec11hi">11.2.3 General requirements.</p>
+                <ul>
+                    <li>
+                        1. Any sign attached to a building shall not extend more than 50% above the roof
+                        line immediately behind the sign, and in no case shall the sign extend above
+                        same roof line by more than five feet.
+                    </li>
+                    <li>
+                        2. Wall signs shall not extend more than 12 inches from the face of the building
+                        into any street, alley, sidewalk, thoroughfare or other public space.
+                    </li>
+                    <li>
+                        3. Wall signs projecting six inches or more into any public space from the face
+                        of a building shall have a clearance of not less than eight feet between the
+                        bottom of such sign and the sidewalk level of any public thoroughfare.
+                    </li>
+                    <li>
+                        4. Glass in any wall sign must be safety glass or comparable material.
+                        11.2.4 Ground signs. Two ground signs may be permitted not exceeding 65 square feet
+                        in total area and subject to the following regulations:
+                        <ul>
+                            <li>1. Shall not be more than 10 feet in height as measured from the ground.</li>
+                            <li>
+                                2. Any open space between the ground and the bottom of the sign shall not
+                                exceed three feet.
+                            </li>
+                            <li>
+                                3. Ground signs may not be located in any area which shall affect visibility for
+                                motor vehicle traffic.
+                            </li>
+                            <li>
+                                4. An additional sign shall be allowed under the provisions of this article, and
+                                subject to the above regulations.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <p class="sec11hi">
+                    11.2.5 Pole or pylon signs. One pole or pylon sign may be permitted not exceeding 65
+                    square feet in area and subject to the following regulations:
+                </p>
+                <ul>
+                    <li>
+                        1. The height of the pole or pylon shall not be more than 25 feet above the
+                        ground or curb, whichever is lower.
+                    </li>
+                    <li>
+                        2. An open space of not less than 10 feet shall be maintained between the ground
+                        level and the bottom of such sign.
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="sec113" class="content" style="display: none;">
+                <h6>Sec. 11.3.  Signs in other use districts.    </h6>
+                <p class="sec11hi">
+                    11.3.0 Signs in the WC Waterfront Conservation Use District. Within the WC
+                    Waterfront Conservation Use District, all signs shall conform to the requirements of
+                    section 11.1.
+                    In addition to the signs allowed to comply with the requirements of section 11.1,
+                    the owner of an approved mobile home park may be allowed to erect a single ground
+                    mounted sign, subject to the following regulations:
+                </p>
+                <ul>
+                    <li>1. The sign shall only contain the name and address of the mobile home park.</li>
+                    <li>
+                        2. The sign shall not be more than 10 feet in height as measured from the
+                        ground.
+                    </li>
+                    <li>
+                        3. The sign shall not contain more than 24 square feet in total area on either of
+                        two sides.
+                    </li>
+                    <li>4. The sign shall not be illuminated, except indirectly.</li>
+                    <li>5. The sign shall not be located closer than 20 feet to any street or property line.</li>
+                </ul>
+                
+                <p class="sec11hi">
+                    11.3.1 Signs in I Industrial Use Districts. Within the I Industrial Use Districts shall
+                    conform to CC and GC use district regulations.
+                </p>
+                <p class="sec11hi">
+                    11.3.2 Signs in industrial/business parks. Signs shall be allowed in industrial/business
+                    parks subject to the following regulations.
+                </p>
+                <ul>
+                    <li>
+                        1. One sign of the pole or pylon type identifying the industrial/business park
+                        only and not exceeding 100 square feet in area and conforming to section
+                        11.2.4.
+                    </li>
+                    <li>
+                        2. One sign directing traffic to business locations. Such sign shall contain equal
+                        sized areas not to exceed 12 inches by 72 inches for each business located
+                        within the park.
+                    </li>
+                    <li>
+                        3. Entrance, exit, safety and other directional signs as required; size in
+                        accordance with size used for New York State signs.
+                    </li>
+                    <li>
+                        4. Corporation identification signs, if intended to be seen from any road outside
+                        the park or area, will conform to regulations for business signs. Other
+                        corporate identification signs will be at the discretion of the corporation but
+                        will not extend more than five feet above the roof line.
+                    </li>
+                </ul>
+            </div>
+                    
+            <div id="sec114" class="content" style="display: none;">
+                <h6>Sec. 11.4.  Administration and violations.  </h6>
+                <p class="sec11hi">
+                    11.4.0 Billboards and off-premises advertising signs. Billboards shall be permitted by
+                    special use permit only and shall be permitted only in industrial districts. Off
+                    premises advertising signs shall be permitted by special use permit only and shall
+                    be permitted in the CC, GC and I use districts only. Such special use permit shall be
+                    defined in and be issued as provided by the zoning ordinance.
+                </p>
+                <p class="sec11hi">
+                    11.4.1 Non-conforming uses. Notwithstanding any other provisions of this article, any
+                    nonconforming sign of any type in existence at the date of the enactment of this
+                    article shall, at the expiration of 12 months from such date, become a prohibited and
+                    unlawful use and shall be discontinued. If a party can show that he has been unduly
+                    burdened by this provision, he may apply in the alternative to the zoning board of
+                    appeals for a special permit to continue his non-conforming sign during the
+                    remaining or undepreciated useful life of such sign, as determined by an appropriate
+                    depreciation formula. For such purpose, the use of a formula commonly used for
+                    income tax purposes or the depreciation formula used in the depreciation schedules
+                    of the income tax returns of the owner of such sign shall be acceptable.
+                </p>
+                <p class="sec11hi">
+                    11.4.2 Variances. Notwithstanding any other provision of this article, upon application to
+                    the zoning board of appeals, that board may vary or adopt the strict application of
+                    any of the requirements of this article.
+                </p>
+            </div>    
         </div>
         <div class="Article12">
-            <div id="sec120" class="content" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div id="sec120" class="content" style="display: none;">
+                <h3>ARTICLE 12 </h3>
+                <h3>NON-CONFORMING BUILDINGS, USES AND LOTS   </h3>
+                <h6>Sec. 12.0.  Continuation of non-conforming buildings and lots.  </h6>
+                    Any lawful building, structure or use of premises existing at the effective date of the 
+                    original zoning law of the city, as approved by the Olean Common Council on July 28, 
+                    1936, or any subsequent amendment thereof applying to such building, structure, or use 
+                    of premises, may be continued although such building, structure, or use of premises does 
+                    not conform to the provisions of this law provided however:    
+                <p class="sec12hi">
+                    12.0.1 Nothing herein contained shall be construed to render lawful any use not lawfully
+                    conforming to provisions of the city's zoning law hereby repealed.
+                    12.0.2 Any extension of a non-conforming use must conform to the provisions of this
+                    law.
+                </p>   
+                <p class="sec12hi">
+                    12.0.3 No non-conforming building or structure shall be enlarged, extended or increased
+                    during its life to an extent exceeding 15% of its existing gross floor area or in
+                    aggregate value 50% of the replacement cost of the building, whichever is greater,
+                    unless said building or structure is changed to conform to the requirements of this
+                    law.
+                </p>   
+                <p class="sec12hi">
+                    12.0.4 A building or structure containing a non-conforming use may be repaired or
+                    strengthened sufficiently to remove a hazard to public safety, as such hazard may be
+                    determined by the code enforcement officer, but not so as to perpetuate the non
+                    conforming use or character of the structure. Nothing in this law shall prevent the
+                    strengthening or restoring to a safe condition any wall, floor or roof which has been
+                    declared unsafe by the code enforcement officer.
+                </p>  
+                <p class="sec12hi">
+                    12.0.5 Only by approval of the zoning board of appeals shall a building used to house a
+                    non-conforming use be restored if damaged or destroyed by fire, flood, earthquake
+                    or other act of God. Substantial restoration shall be made within six months of the
+                    occurrence of the damage, except that this time limit may be extended by the
+                    zoning board of appeals in cases of practical difficulty or hardship. Any building
+                    damaged by such occurrence to the extent of more than 50% of its replacement
+                    value and not demolished shall be repaired or rebuilt within a six-month period to
+                    conform to the building line of the original structure.
+                </p> 
+                <p class="sec12hi">
+                    12.0.6 No non-conforming use shall be maintained, renewed, changed or extended
+                    without a certificate of compliance having first been issued by the code
+                    enforcement officer.
+                </p>
+            </div>  
+            <div id="sec121" class="content" style="display: none;">
+                <h6>Sec. 12.1.  Discontinuance of a non-conforming use. [L.L. No. 5-00, § 1, 9-26-2000]    </h6>
+                <p class="sec12hi">
+                    12.1.1 Any building or land which is used for or occupied by a non-conforming use and
+                    which is changed to or replaced by a conforming use, shall not thereafter be used
+                    for or occupied by a nonconforming use.
+                </p>   
+                <p class="sec12hi">
+                    12.1.2 When a non-conforming use has been discontinued for a period of one year, it
+                    shall be deemed abandoned and shall not thereafter be re-established and the future
+                    use shall be in conformity with the provisions of this law.
+                </p>   
+                <p class="sec12hi">
+                    12.1.3 Within residential districts, no off-street parking is required for a building that
+                    was last utilized for a nonconforming use regardless of how long the building or
+                    any portion of the building was vacant so long as the building (1) is being converted
+                    into a single or a two-family residential use, and (2) has no more than five
+                    bedrooms in the entire building. Within the meaning of this provision, the term
+                    "bedroom" includes any room with a bed and any room that is actually used for
+                    overnight sleeping, like a den.
+                </p>
+            </div>
+            <div id="sec122" class="content" style="display: none;">   
+                <h6>Sec. 12.2.  Necessary maintenance and repairs.  </h6>
+                A building or structure of non-conforming use may be repaired or restored to a safe 
+                condition except as specified in section 12.5. 
+            </div>
+            <div id="sec123" class="content" style="display: none;">  
+                <h6>Sec. 12.3.  Prior construction.  </h6>
+                Any building or structure for which a building permit was issued prior to the effective 
+                date of this law, or any subsequent amendment thereof applying, may be completed and 
+                used in accordance with the plans and specifications for such building and structure. 
+            </div>
+            <div id="sec124" class="content" style="display: none;">  
+                <h6>Sec. 12.4.  Existing undersized lots.    </h6>
+                <p class="sec12hi">
+                    12.4.1 Any lot held in single and separate ownership prior to the adoption of this law,
+                    and whose area is less than the specified minimum lot requirements of this law for
+                    the district, may be considered as complying with such minimum lot requirements
+                    and no variance shall be required, provided that:
+                    <ul>
+                        <li>
+                            1. Such lot does not adjoin any other lot or lots held by the same owner whose
+                            aggregate area is equal to or greater than the minimum lot area required for
+                            that district.
+                        </li>
+                        <li>
+                            2. Such lot has an area of at least 3,000 square feet and a minimum width of at
+                            least 40 feet at the required setback line if it is to be used for residential
+                            purposes.
+                        </li>
+                        <li>3. The following minimum yard dimensions are maintained for residences:</li>
+                        <ul>
+                            <li>Side yards—Four feet.</li>
+                            <li>Rear yards—Ten feet.</li>
+                            <li>Front yards—Fifteen feet.</li>
+                        </ul>
+                        <li>
+                            4. No detached accessory building shall be located closer to a side lot line than
+                            three feet, nor less than five feet to the residence building and is located
+                            behind the rear line of such residence building. No accessory building shall be
+                            located closer to the rear lot line than three feet if no easement is located along
+                            such rear lot line.
+                        </li>
+                        <li>5. All other bulk requirements for that district are complied with.</li>
+                    </ul>
+                </p>    
+                <p class="sec12hi">
+                    12.4.2 In any district where residences are permitted, such undersized non-conforming
+                    lots may be used for not more than one single-family dwelling.
+                </p> 
+            </div>
+            <div id="sec120" class="content" style="display: none;">   
+                <h6>Sec. 12.5.  Reduction in lot area.  </h6>
+                A building permit shall not be issued for any lot that is reduced in area so that it creates a 
+                non-conforming bulk or use in violation of any regulations contained in this law.    
             </div>
         </div>
         <div class="Article13">
-            <div id="sec130" class="content" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div id="sec130" class="content" style="display: none;">
+                <h3>ARTICLE 13</h3>
+                <h3>GENERAL EXCEPTIONS</h3>
+                <h6>Sec. 13.0.  Public properties.  </h6>
+                <p>
+                    Nothing in this law shall restrict construction or use in the exercise of a governmental
+                    function of public buildings, lands or property.
+                </p>
+            </div>  
+            <div id="sec131" class="content" style="display: none;">
+                <h6>Sec. 13.1.  Public utilities.  </h6>
+                <p>
+                    Nothing in this law shall restrict the construction or use of underground or overhead
+                    distribution facilities of public utilities operating under the laws of the State of New
+                    York. Other facilities may be constructed subject to a site plan approval.
+                </p>
             </div>
         </div>
         <div class="Article14">
-            <div id="sec140" class="content" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div id="sec140" class="content" style="display: none;">
+                <h3>ARTICLE 14</h3>
+                <h3>ZONING BOARD OF APPEALS</h3>  
+                <h6>Sec. 14.0.  Establishment and duties. [L.L. 3-00, § 1, 3-28-2000]  </h6>
+                <p>
+                    Pursuant to city laws and in accordance with the General City Law of the State of New
+                    York, as amended, the city shall establish a zoning board of appeals. The zoning board of
+                    appeals shall consist of seven members appointed by the mayor with the approval of a
+                    majority of the common council. Members shall be electors residing in the city. The
+                    mayor and common council may provide for compensation to be paid to members,
+                    experts, clerks and a secretary and provide for such other expenses as may be necessary
+                    and proper, not exceeding the appropriation made by the mayor and common council for
+                    this purpose. The zoning board of appeals shall designate a chairperson, vice-chairperson
+                    and secretary with the approval of the mayor and common council. In the absence of a
+                    chairperson, vice-chairperson or secretary, the zoning board of appeals may designate
+                    members to serve in acting capacities in these positions. A member of the zoning board
+                    of appeals shall not at the same time be a member of the common council of the city. The
+                    mayor and common council shall have the power to remove any member of the zoning
+                    board of appeals for cause, after public hearing.
+                </p>
+                <p class="sec14hi">
+                    14.0.1 Term of appointment. The terms of office of the members of the zoning board of
+                    appeals shall be seven years. Of the members of the zoning board of appeals first
+                    appointed, one shall hold office for the term of one year, one for the term of two
+                    years, one for the term of three years, one for the term of four years, one for the
+                    term of five years, one for the term of six years and one for the term of seven years,
+                    from and after his or her appointment. The appointment of the chairperson shall be
+                    for a term of one year.
+                </p>
+                <p>
+                    Their successors shall be appointed for the term of seven years from and after
+                    the expiration of the terms of their predecessors in office. If a vacancy shall occur
+                    otherwise than by expiration of term, it shall be filled by the mayor and common council
+                    of the city by appointment for the duration of the unexpired term.
+                </p>   
+                <p class="sec14hi">
+                    14.0.2 Staff. The zoning board of appeals may employ such clerical or other staff
+                    assistance as may be necessary, and prescribe their duties, provided that it shall not
+                    at any time incur expenses beyond the amount of the appropriations made by the
+                    mayor and common council of the city and then available for that purpose.
+                </p>
+                14.0.3 Powers and duties. The zoning board of appeals shall have all the powers and 
+                duties prescribed by law and this law, which are more particularly specified as 
+                follows:   
+                <ul>
+                    <li>
+                        1. Interpretation. It shall be the responsibility of the zoning board of appeals to
+                        hear and decide appeals from, and review, any order, requirement, decision, or
+                        interpretation made by the code enforcement officer.
+                    </li>
+                    <li>
+                        2. Use variances.
+                        <ul>
+                            <li>
+                                a.  The zoning board of appeals, on appeal from the decision or
+                                determination of the code enforcement officer, shall have the power to
+                                grant use variances, authorizing a use of the land which otherwise would
+                                not be allowed or would be prohibited by the terms of this law.
+                            </li>
+                            <li>
+                                b.   No such use variance shall be granted by the zoning board of appeals
+                                without a showing by the applicant that applicable zoning regulations
+                                and restrictions have caused unnecessary hardship. In order to prove
+                                such unnecessary hardship the applicant shall demonstrate and the
+                                zoning board of appeals shall find that:
+                            </li>
+                            <ul>
+                                <li>
+                                    (1) Under the applicable regulations of this law the applicant is
+                                    deprived of all reasonable economic use or benefit from the
+                                    property in question, which deprivation must be established by
+                                    competent financial evidence; and
+                                </li>
+                                <li>
+                                    (2) That the alleged hardship relating to the property in question is
+                                    unique, and does not apply to a substantial portion of the district or
+                                    neighborhood; and
+                                </li>
+                                <li>
+                                    (3) That the requested use variance, if granted, will not alter the
+                                    essential character of the neighborhood; and
+                                </li>
+                                <li>(4) That the alleged hardship has not been self-created.</li>
+                            </ul>
+                            <li>
+                                c. The zoning board of appeals, in the granting of use variances, shall grant
+                                the minimum variance that it shall deem necessary and adequate to
+                                address the unnecessary hardship proven by the applicant, and at the
+                                same time preserve and protect the character of the neighborhood and
+                                the health, safety and welfare of the community.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        3. Area variances.
+                        <ul>
+                            <li>
+                                a. The zoning board of appeals shall have the power, upon an appeal from
+                                a decision or determination of the code enforcement officer, to grant
+                                area variances from the lot area, lot width, yard, height, lot coverage or
+                                other dimensional requirements of this law.
+                            </li>
+                            <li>
+                                b. In making its determination, the zoning board of appeals shall take into
+                                consideration the benefit to the applicant if the variance is granted, as
+                                weighed against the detriment to the health, safety and welfare of the
+                                neighborhood or community by such grant. In making such
+                                determination the zoning board of appeals shall also consider:
+                                <ul>
+                                    <li>
+                                        (1) Whether an undesirable change will be produced in the character
+                                        of the neighborhood or a detriment to nearby properties will be
+                                        created by the granting of the area variance; and/or
+                                    </li>
+                                    <li>
+                                        (2) Whether the benefit sought by the applicant can be achieved by
+                                        some method, feasible for the applicant to pursue, other than an
+                                        area variance; and/or
+                                    </li>
+                                    <li>(3) Whether the requested area variance is substantial; and/or    </li>
+                                    <li>
+                                        (4) Whether the proposed variance will have an adverse effect or
+                                        impact on the physical or environmental conditions in the
+                                        neighborhood or district; and/or
+                                    </li>
+                                    <li>
+                                        (5) Whether the alleged difficulty was selfcreated, which consideration
+                                        shall be relevant to the decision of the zoning board of appeals, but
+                                        shall not necessarily preclude the granting of the area variance.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                c.   If the zoning board of appeals, in its discretion, shall grant an area
+                                variance, it shall grant the minimum variance that it shall deem
+                                necessary and adequate and at the same time preserve and protect the
+                                character of the neighborhood and the health, safety and welfare of the
+                                community.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        4. Imposition of conditions. The zoning board of appeals shall, in the granting of
+                        use variances, area variances and special use permits, have the authority to
+                        impose such reasonable conditions and restrictions as are directly related to
+                        and incidental to the proposed use of the property, or the period of time such
+                        variance shall be in effect. Such conditions shall be consistent with the spirit
+                        and intent of this law and shall be imposed for the purpose of minimizing any
+                        adverse impact such variance may have on the neighborhood or community.
+                    </li> 
+                    <li>
+                        All work which is authorized by the grant of a variance or special use permit
+                        shall be commenced within six months or such greater period not to exceed one year, as
+                        may be specified in the approval by the zoning board of appeals. Unless otherwise
+                        authorized by the zoning board of appeals, all work shall be completed within one year of
+                        the date of the grant of such variance or special use permit. Such approval may be
+                        extended as determined by the zoning board of appeals upon receipt of written
+                        application submitted prior to the expiration of the approval period.
+                    </li>  
+                </ul>
+                <p class="sec14hi">14.0.4 Mandatory referral. </p>  
+                <ul>
+                    <li>
+                        1. The zoning board of appeals shall, at least five days before a public hearing,
+                        mail notices thereof to the parties, and to the regional state park commission
+                        having jurisdiction over any state park or parkway within 500 feet of the
+                        property affected by such appeal.
+                    </li>
+                    <li>
+                        2. The zoning board of appeals, before taking final action on any use variance
+                        affecting real property lying within a distance of 500 feet from the boundary
+                        of any city, village or town, or from the boundary of any existing or proposed
+                        county or state park or other recreation area, or from the right-of-way of any
+                        stream or drainage channel owned by the county or for which the county has
+                        established channel lines, or from the existing or proposed boundary of any
+                        county or state owned land on which a public building or institution is
+                        situated, shall refer such matter to the Cattaraugus County Planning Board for
+                        report and recommendation. If the county planning board fails to make such
+                        report within 30 days after receipt of referred matter the zoning board of
+                        appeals may act without such report. If the county planning board disapproves
+                        the proposal, or recommends modification thereof, the zoning board of
+                        appeals may act contrary to such disapproval or recommendation only by a
+                        vote of a majority plus one of all the members thereof and after the adoption
+                        of a resolution fully setting forth the reasons for such contrary action. The
+                        zoning board of appeals shall file a report of its action with the county
+                        planning board within seven days after such action is taken.
+                    </li>
+                </ul>
+                <p class="sec14hi">14.0.5 Procedure.  </p> 
+                <ul>
+                    <li>
+                        1. All appeals and applications made to the zoning board of appeals shall be in
+                        writing, on forms prescribed by said board. Every appeal or application shall
+                        refer to the specific provision of the law involved, and shall exactly set forth
+                        the interpretation that is claimed, or the details of the variance that is applied
+                        for, and the grounds on which it is claimed that the variance should be
+                        granted, as the case may be.
+                    </li>
+                    <li>
+                        2. The zoning board of appeals shall hold a public hearing on appeals within 60
+                        days after receipt and give due notice of such public hearing by advertising in
+                        the official newspaper at least 10 days prior to the date scheduled for the
+                        public hearing.
+                    </li>
+                    <li>
+                        3. Applicants for use variances are required to mail notices of such public
+                        hearings to the owners or occupants of all lands within a radius of 250 feet
+                        from any part of the property for which the use variance is being requested.
+                        Such notices shall be postmarked at least 10 days prior to the date scheduled
+                        for the public hearing.
+                    </li>
+                    <li>
+                        4. Applicants for area variances are required to mail notices of such public
+                        hearings to the owners or occupants of all lands abutting any part of the
+                        property for which the area variance is being requested. Such notices shall be
+                        postmarked at least 10 days prior to the date scheduled for the public hearing.
+                        Abutting owners in every direction shall be notified by the mailing of notices
+                        and, in the event the property for which the area variance is requested fronts
+                        on a street, alley or any other public way, notices shall also be sent to the
+                        owners and/or occupants of properties located on the opposite side of the
+                        street, alley or public way.
+                    </li>
+                    <li>
+                        5. Applicants for special use permits referred to the zoning board of appeals shall
+                        apply the standards governing special use permits as provided in subsection
+                        9.0.4 of this law and comply with the notice requirements provided in
+                        subsection 9.0.3(c).
+                    </li>
+                    <li>
+                        6. Copies of the appeal or application document shall be mailed to the members
+                        of the board of appeals. The board of appeals shall meet within 15 days of the
+                        date of filing the appeal or application, review the matter and schedule the
+                        required public hearing.
+                    </li>
+                    <li>
+                        7. The zoning board of appeals shall decide on appeals and on other matters
+                        referred to it within 60 days after final public hearing.
+                    </li>
+                    <li>
+                        8. Every decision of the zoning board of appeals shall be by resolution, each of
+                        which shall contain a full record of said board in the particular case.
+                    </li>
+                    <li>
+                        9. Where there are practical difficulties or unnecessary hardship in the way of
+                        carrying out the strict letter of this chapter, the zoning board of appeals shall
+                        have the power to vary or modify the application of any of the regulations or
+                        provisions of this law relating to the use, construction, structural changes in,
+                        equipment or alteration of buildings or structures, or the use of land, so that
+                        the spirit of the law shall be observed, public safety and welfare secured and
+                        substantial justice done. The zoning board of appeals shall have no power to
+                        vary or modify the application of the provisions and requirements of the
+                        Uniform Fire Prevention and Building Code of the State of New York.
+                    </li>
+                </ul>
+                <p class="sec14hi">14.0.6 Rules of procedure, by-laws, forms.</p>
+                <ul>
+                    <li>
+                        1. Meetings open to the public. All meetings of the zoning board of appeals shall
+                        be open to the public.
+                    </li>
+                    <li>
+                        2. Minutes of meetings. Such board shall keep minutes of each of its meetings
+                        which are certified as accurate by the secretary of the board which describe
+                        the factors considered by the board in reaching its decision and which show
+                        the vote of each member on every application to the board. Each member
+                        present at any meeting of the board shall have a vote on every question
+                        brought before the board for its consideration and no member shall be excused
+                        from voting on any question except by a concurring vote of two-thirds of all
+                        present. If a member is absent or abstains from voting the minutes shall
+                        indicate such fact.
+                    </li>
+                    <li>
+                        3. Quorum and majority vote. Four votes of the board shall constitute a quorum
+                        and four votes shall be necessary to decide in favor of any applicant or any
+                        matter upon which said board is required to pass under the provisions of this
+                        law.
+                    </li>
+                    <li>
+                        4. Additional procedures and by-laws. The zoning board of appeals shall have
+                        the power to make, adopt, and promulgate such additional written rules of
+                        procedure, by-laws, and forms as it may deem necessary for the proper
+                        execution of its duties and to secure the intent of this law.
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="Article15">
-            <div id="sec150" class="content" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div id="sec150" class="content" style="display: none;">
+                <h3>ARTICLE 15</h3>
+                <h3>ADMINISTRATION</h3> 
+                <h6>Sec. 15.0.  Enforcement.  </h6>
+                <p>
+                    This law shall be enforced by the code enforcement officer, who shall be appointed by
+                    the mayor and common council of the city. No building permit shall be issued or reissued
+                    except where all the provisions of this law have been complied with. The code
+                    enforcement officer shall keep the planning board advised of all matters pertaining to the
+                    enforcement of this law other than routine duties, and shall submit a monthly report to the
+                    mayor and common council, planning board and zoning board of appeals enumerating the
+                    applications received, inspections made, permits issued or refused, and other actions
+                    taken.
+                </p>
+                <p>
+                    Where sufficient cause exists to believe that the terms of this law have been violated and
+                    where corrective action has not been taken nor an appropriate variance application to the
+                    zoning board of appeals filed, within 10 days of the issuance of a written notice of
+                    violation mailed to the record owner(s) of the property where the violation occurs, with a
+                    copy to the alleged violator, if not the same person, the code enforcement officer,
+                    pursuant to Municipal Home Rule Law SS 10, Subdivision 4(a), is authorized to issue an
+                    appearance ticket directing the alleged violator to appear in a designated local criminal
+                    court at a designated future time in connection with the alleged and designated offense.
+                </p>
+            </div>  
+            <div id="sec151" class="content" style="display: none;">
+                <h6>Sec. 15.1.  Building permits.    </h6>
+                <p class="sec15hi">
+                    15.1.1 No building or structure shall be erected, added to, or structurally altered until a
+                    permit therefor as specified herein has been issued by the code enforcement officer.
+                    No building permit shall be issued for any building under the building and building
+                    regulations code of the city where said construction, addition, or alteration or use
+                    thereof would be in violation of any of the provisions of this law.
+                </p> 
+                <p class="sec15hi">
+                    15.1.2 For zoning purposes, there shall be submitted with all applications for building
+                    permits two copies of a layout or plot plan drawn to scale showing the actual
+                    dimensions of the lot to be built upon, the exact size and location on the lot of the
+                    building and accessory buildings to be erected, and such other information as may
+                    be necessary to determine and provide for the enforcement of this law.
+                </p> 
+                <p class="sec15hi">
+                    15.1.3 One copy of such layout or plot plan shall be returned when approved by the code
+                    enforcement officer, together with such permit to the applicant, upon the payment
+                    of a fee as set by the common council of the city.
+                </p>
+            </div>
+            <div id="sec152" class="content" style="display: none;">    
+                <h6>Sec. 15.2.  Certificate of compliance.  </h6>
+                <p>
+                    No land shall be occupied or used and no building or other structure erected, altered,
+                    extended, enlarged or, if a non-conforming use, restored shall be occupied, used, or
+                    changed in use until a certificate of compliance shall have been issued by the code
+                    enforcement officer stating that the building, other structure or proposed use thereof
+                    complies with the provisions of the zoning law of the city. Vacated existing commercial
+                    properties may not be used or occupied until a certificate has been issued to ensure that
+                    the new use or occupancy is permitted.
+                </p>
+                <p>
+                    All certificates of compliance for new or structurally altered buildings or structures shall
+                    be applied for coincident with the application for a building permit therefor. Such
+                    certificate of compliance shall be issued within 30 days after the erection or alteration
+                    shall have been approved as complying with the provisions of this law.
+                </p>
+            </div>
+            <div id="sec153" class="content" style="display: none;"> 
+                <h6>Sec. 15.3.  Inspection. </h6> 
+                <p>
+                    The code enforcement officer is hereby empowered to cause any building, other structure
+                    or tract of land to be inspected and examined and to order, in writing, the remedying of
+                    any condition found to exist therein or thereat in violation of any provision of this law.
+                    After any such order has been served, no work shall proceed on any building, other
+                    structure or tract of land covered by such order, except to comply with such order.
+                </p>    
             </div>
         </div>
         <div class="Article16">
-            <div id="sec160" class="content" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div id="sec160" class="content" style="display: none;">
+                <h3>ARTICLE 16</h3>
+                <h3>AMENDMENTS</h3>  
+                <h6>Sec. 16.0.  Procedure.  </h6>
+                The common council of the city may, from time to time, on its own motion, or on 
+                petition, or on recommendation from the planning board, amend the regulations and 
+                districts established under this article after public notice and hearing in each case. All 
+                proposed amendments of the regulations or districts herein established shall be filed in 
+                writing in a form required by the common council. The procedure for amending the 
+                regulations and districts established under this law shall be as provided in Section 83 of 
+                the General City Law, as amended from time to time.   
+            </div>
+            <div id="sec161" class="content" style="display: none;">
+                <h6>Sec. 16.1.  Advisory report to the common council of the city.  </h6>
+                Every proposed amendment, unless initiated by the planning board, shall be referred by 
+                the common council to the planning board. The planning board shall report in writing its 
+                recommendations thereon to the common council, accompanied by a full statement of the 
+                reasons for such recommendations. If the planning board fails to report within a period of 
+                45 days from the date of receipt of notice or such longer time as may have been agreed 
+                upon by it and the common council, the common council may act without such report. If 
+                the planning board recommends disapproval of the proposed amendment, or recommends 
+                modification thereof, the common council shall not act contrary to such disapproval or 
+                recommendation except by a three-fourths vote.  
+            </div>
+            <div id="sec162" class="content" style="display: none;"> 
+                <h6>Sec. 16.2.  Petition by owners of 50% of frontage.  </h6>
+                Wherever the owners of 50% or more of the frontage to a proposed amendment shall 
+                present a petition duly signed and acknowledged to the common council, requesting an 
+                amendment, supplement, change or repeal of the regulations prescribed for such district 
+                or part thereof, it shall be the duty of the common council to vote upon said petition 
+                within 90 days after filing of the same by the petitioners with the city clerk.   
+            </div>
+            <div id="sec163" class="content" style="display: none;">
+                <h6>Sec. 16.3.  Public notice and hearing.  </h6>
+                The common council of the city shall, by resolution, fix the time and place of the public 
+                hearing and cause notice to be given as follows:    
+                <p class="sec16hi">
+                    16.3.1 By publishing notices of the proposed amendment and the time and place of the
+                    public hearing in a newspaper of general circulation in the city, not less than 10
+                    days prior to the date of public hearing.
+                </p>   
+                <p class="sec16hi">
+                    16.3.2 By giving written notice of hearing to any required municipal, county, regional,
+                    metropolitan, state or federal agency in a manner prescribed by law.
+                </p>   
+                <p class="sec16hi">
+                    16.3.3 (For zoning map amendments only.) By mailing a notice of such public hearing to
+                    the owners of all lands within a radius of 250 feet from any part of the property or
+                    properties for which the change will be applicable and such notice to all lands
+                    within the areas for which it will be applicable. This notice is provided as a courtesy
+                    only, and failure of the city to fully comply with this noticing provision shall not
+                    invalidate any future amendment.
+                </p>
+            </div>
+            <div id="sec164" class="content" style="display: none;">   
+                <h6>Sec. 16.4.  Protest by owners.  </h6>
+                If a protest against the proposed amendment is presented to the common council, duly 
+                signed and acknowledged by the owners of 20% or more of the area of land included in 
+                such proposed amendment, or by the owners of 20% or more of the area of land 
+                immediately adjacent extending 100 feet therefrom, or by the owners of 20% or more of 
+                the area of land directly opposite thereto extending 100 feet from the street frontage of 
+                such opposite land, such amendment shall not be passed except by the favorable vote of 
+                at least a three-fourths majority of the common council.  
+            </div>
+            <div id="sec165" class="content" style="display: none;"> 
+                <h6>Sec. 16.5.  Decision by common council.  </h6>
+                The common council shall set the public hearing as required and shall render its decision 
+                within 60 days of the receipt of the planning board's report, (except the common council 
+                shall not be required to hold a public hearing prior to submission to the planning board). 
+                If the common council deems it advisable, it may require as a condition for approval of 
+                the amendment, that the amended area be put to use within a reasonable length of time.   
+            </div>
+            <div id="sec166" class="content" style="display: none;">
+                <h6>Sec. 16.6.  Notification of decision.  </h6>
+                The common council shall notify the applicant for an amendment of its decision in 
+                writing within five days after the decision has been rendered. 
+            </div>
+            <div id="sec167" class="content" style="display: none;">  
+                <h6>Sec. 16.7.  Filing with the secretary of state.  </h6>
+                Every amendment to this Law shall be filed with the Secretary of State of New York and 
+                become effective five days thereafter.  
             </div>
         </div>
         <div class="Article17">
-            <div id="sec170" class="content" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div id="sec170" class="content" style="display: none;">
+                <h3>ARTICLE 17</h3>
+                <h3>REMEDIES</h3>
+                <h6>Sec. 17.0.  Complaints of violations.  </h6>
+                Whenever a violation of this law occurs, any person may file a complaint in regard 
+                thereto. All such complaints must be in writing and shall be filed with the code 
+                enforcement officer, who shall properly record such complaint and immediately 
+                investigate the report thereon.   
+            </div>
+            <div id="sec171" class="content" style="display: none;">
+                <h6>Sec. 17.1.  Procedure for abatement of violations.    </h6>
+                <p class="sec17hi">
+                    17.1.1 Whenever in the opinion of the code enforcement officer, after proper
+                    examination and inspection, there appears to exist a condition which is a violation
+                    of any provision of this law, or of any rule or regulation adopted pursuant thereto,
+                    the code enforcement officer shall serve a written notice of violation upon the
+                    owner of the property in violation. Fourteen days after notification the condition
+                    shall be considered a violation and shall be subject to appropriate penalties and
+                    other remedies as provided for herein and under the laws of the State of New York.
+                </p>   
+                <p class="sec17hi">
+                    17.1.2 Such notice of violation shall: 
+                    <ul>
+                        <li>(1) inform the owner of the nature and details of the condition and the reason why it is a violation,</li>
+                        <li>(2) recommend remedial action which if taken will effect compliance with this chapter and other rules and regulations of the city, and</li>
+                        <li>(3) state the date by which the violation must be remedied or removed in order to be in compliance with this law.</li>
+                    </ul>
+                </p>   
+                <p class="sec17hi">
+                    17.1.3 In the event the violation is not remedied within the time allowed, then the person
+                    notified of such violation shall be subject to conviction for a violation as defined by
+                    the Penal Laws of the State of New York and shall be subject to a fine of not more
+                    than $250 or by sentence of imprisonment for a period of not more than 15 days, or
+                    both. Each week that the violation continues shall constitute a separate offense.
+                </p>
+            </div>
+            <div id="sec172" class="content" style="display: none;">    
+                <h6>Sec. 17.2.  Alternative penalty. </h6> 
+                In addition to the foregoing remedies, an action or proceeding in the name of the city may 
+                be commenced in any court of competent jurisdiction to compel compliance with or 
+                restrain violation of this chapter or orders issued in compliance with this law.  
+                In the case of any violation or threatened violation of any of the provisions of this law, or 
+                conditions imposed by the common council or planning board of the city, in addition to 
+                other remedies herein provided, the common council may institute any appropriate action 
+                or proceeding to prevent such unlawful erection, structural alteration, reconstruction, 
+                moving and/or use, to restrain, correct, or abate such violation, to prevent the occupancy 
+                of such building structure or land, or to prevent any illegal act, conduct, business or use 
+                in or about such premises. 
             </div>
         </div>
         <div class="Article18">
