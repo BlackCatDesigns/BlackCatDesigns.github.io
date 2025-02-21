@@ -255,17 +255,12 @@ li {
     margin-top: 10px
 }
 
-p.sec3hi {
+p.sec3hi, p.sec4hi, p.sec5hi, p.sec6hi, p.sec7hi, p.sec8hi, p.sec9hi {
     padding-left: 40px; 
     text-indent: -40px;
 }
 
-p.sec4hi {
-    padding-left: 40px; 
-    text-indent: -40px;
-}
-
-p.sec4hisub {
+p.sec4hisub, p.sec9hisub {
     padding-left: 80px; 
     text-indent: -40px;
 }
@@ -278,21 +273,10 @@ p.sec4hisub {
     padding-left: 120px;
 }
 
-p.sec7hi {
-    padding-left: 40px; 
-    text-indent: -40px;
+p.sec10hi, p.sec11hi, p.sec12hi, p.sec13hi, p.sec14hi, p.sec15hi, p.sec16hi, p.sec17hi {
+    padding-left: 50px; 
+    text-indent: -50px;
 }
-
-p.sec9hi {
-    padding-left: 40px; 
-    text-indent: -40px;
-}
-
-p.sec9hisub {
-    padding-left: 80px; 
-    text-indent: -40px;
-}
-
 
 .Help {
   display: none;
