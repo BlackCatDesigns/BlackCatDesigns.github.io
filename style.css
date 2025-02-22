@@ -223,13 +223,13 @@ ul.ch28 {
 .HomeMain {
     font-size: 64px;
     background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
-    width: 1880px;
+    width: 100%;
 }
 
 .HomeSub {
     font-size: 32px;
     background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
-    width: 1880px;
+    width: 100%;
 }
   /*Main content Styling*/
 
