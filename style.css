@@ -153,6 +153,7 @@ li.headerlinks a {
     justify-content: space-between;
     background-color: #f5f5f5fd;
     padding: 20px;
+	padding-bottom: 120px;
     box-sizing: border-box;
     overflow-y: auto;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
