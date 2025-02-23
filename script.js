@@ -1,3 +1,13 @@
+//Alex Ermer
+//IT371 - WEB DESIGN AND DEVELOPMENT
+//Website Final Project
+//February 23, 2025
+
+//Listener routine which controls which content is loaded
+//When the user checks a box, the associated section's display goes from
+//none to block and vice versa. If one of special pages are loaded they are hidden.
+//This also controls the routine for article boxes being checked, if the article box 
+//checked, then all the sections in that article are displayed and vice versa.
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".HomePage").forEach(el => el.style.display = "block");
     document.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
@@ -14,12 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("[id^='ArticleCheckbox']").forEach(articleCheckbox => {
         articleCheckbox.addEventListener("change", function () {
             const articleClass = this.getAttribute("data-article");
-            checkboxChange(articleClass, this.checked);
+            handleArticleCheckboxChange(articleClass, this.checked);
             document.querySelectorAll(".Help, .About, .HomePage, .Contact, .Feedback").forEach(el => el.style.display = "none");;
         });
     });
 
-    function checkboxChange(articleClass, isChecked) {
+    function handleArticleCheckboxChange(articleClass, isChecked) {
         const article = document.getElementById(articleClass);
         if (article) {
             article.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
@@ -34,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+//Function to search all the content of the website and if the search string is found
+//the section in which is exists is checked and displayed.
 function searchSections() {
     document.querySelectorAll(".Help, .About, .HomePage, .Contact, .Feedback").forEach(el => el.style.display = "none");
     const searchText = document.getElementById("searchBox").value.toLowerCase();
@@ -46,6 +58,7 @@ function searchSections() {
         });
         return; 
     }
+
     document.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
         const targetId = checkbox.getAttribute("data-target");
         const section = document.getElementById(targetId);
@@ -58,6 +71,7 @@ function searchSections() {
     });
 }
 
+//Function to show and hide the section checkboxes
 function toggleSections(listId) {
     const list = document.getElementById(listId);
     if (list) {
@@ -65,6 +79,7 @@ function toggleSections(listId) {
     }
 }
 
+//Function to display the Help content and hide all other content
 function showHelp(articleClass) {
     document.querySelectorAll(".content").forEach(el => el.style.display = "none");
     document.querySelectorAll(".Contact").forEach(el => el.style.display = "none");
@@ -78,6 +93,7 @@ function showHelp(articleClass) {
     }
 }
 
+//Function to display the Contact content and hide all other content
 function showContact(articleClass) {
     document.querySelectorAll(".content").forEach(el => el.style.display = "none");
     document.querySelectorAll(".Help").forEach(el => el.style.display = "none");
@@ -91,6 +107,7 @@ function showContact(articleClass) {
     }
 }
 
+//Function to display the About content and hide all other content
 function showAbout(articleClass) {
     document.querySelectorAll(".content").forEach(el => el.style.display = "none");
     document.querySelectorAll(".Contact").forEach(el => el.style.display = "none");
@@ -104,6 +121,7 @@ function showAbout(articleClass) {
     }
 }
 
+//Function to display the homepage and hide all other content
 function showHome(articleClass) {
     document.querySelectorAll(".content").forEach(el => el.style.display = "none");
     document.querySelectorAll(".Help").forEach(el => el.style.display = "none");
@@ -117,6 +135,7 @@ function showHome(articleClass) {
     }
 }
 
+//Function to display the Feedback form and hide all other content
 function showFeedback(articleClass) {
     document.querySelectorAll(".content").forEach(el => el.style.display = "none");
     document.querySelectorAll(".Help").forEach(el => el.style.display = "none");
@@ -130,12 +149,14 @@ function showFeedback(articleClass) {
     }
 }
 
+//Function to acknowledge a submitted Feedback form and then load the homepage
 function validateForm() {
     alert("Submission Received. Thank you!");
     window.location.href = "/";
     return false; 
 }
 
+//Function to clear all checked sections
 function clearAllSelections() {
     document.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
         checkbox.checked = false;
