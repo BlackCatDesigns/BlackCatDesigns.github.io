@@ -1,8 +1,13 @@
+<!--Alex Ermer-->
+<!--IT371 - WEB DESIGN AND DEVELOPMENT-->
+<!--Website Final Project-->
+<!--February 23, 2025-->
 
 <!doctype html>
 <html lang="en">
 
 <head>
+    <!--Document head containing standard language, imports script.js for the interactivity and style.css for the styling-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>City of Olean - Zoning Laws</title>
@@ -12,6 +17,7 @@
     <meta name="description" content="This is the City of Olean code webpage.">
 
 <body>
+    <!--Header for the top of the website, contains links to the City of Olean website, along with links to the Help, Contact, About, and Feedback pages-->
     <header>
         <ul class="HeaderList">
             <li><a href="https://www.cityofolean.org"> <img src="CoO-Logo.png" alt="City of Olean logo"></a></li>
@@ -29,6 +35,8 @@
     </header>
 
     <div class="sidebar">
+        <!--Sidebar bar portion of the website, contains checkboxes which control what content is displayed, the article links toggle 
+        displaying the section checkboxes. Also there are checkboxes for the zoning map and use regulation table-->
         <input type="text" id="searchBox" placeholder="Search zoning code..." oninput="searchSections()">
         <ul class="ch28">
             <li class="articles">
@@ -315,27 +323,32 @@
         </ul>
     </div>
     <div class="main-content">
+        <!--This section displays all the content of the website based on which checkboxes are selected or one of the special pages if that link is clicked-->
         <div class="HomePage">
+            <!--This is what is displayed when the webpage is first loaded or refreshed-->
             <p class="HomeMain">WELCOME TO THE CITY OF OLEAN ZONING LAWS PAGE.</p>
             <p class="HomeSub">Please select an article to the left to view the code.</p>
         </div>
         <div class="Help">
+            <!--This contains the help section of the website-->
             <p class="special">HELP</p>
-            <p>This is the unofficial City of Olean zoning laws page. It does not represent the City of Olean in anyway. Not all content is currently available.</p>
+            <p>This is the unofficial City of Olean zoning laws page. It does not represent the City of Olean in anyway.</p>
             <p class="FAQ">
                 (F)requently (A)sked (Q)uestions: <br>
                 What is this lorem ipsum stuff? <br>
-                It's just a placeholder for future content.<br>
+                Hopefully it is all gone, if not, send me some feedback!<br>
                 Why does this site exist at all?<br>
                 It's a project for school, maybe someday it'll be more than that.<br>
             </p>
         </div>
         <div class="Contact">
+            <!--Contact section of the website which has a link to the real City of Olean Code Enforcement site-->
             <p class="special">CONTACT INFORMATION</p>
             <p>If you are trying to get in touch with the real City of Olean Code Enforcement Office, their website can be found <b><u><a href="https://cityofolean.org/departments/code-enforcement/">here</a></u></b>.<br>
             Their hours are Monday through Friday from 8:00am to 5:00pm. </p>    
         </div>
         <div class="About">
+            <!--About section of the website which contains pictures of the code enforcement team so you know who to expect to coming knocking on your door-->
             <p class="special">ABOUT</p>
                <p>
                 Meet the code enforcement team: <br>
@@ -349,6 +362,7 @@
         </div>
 
         <div class="Feedback" style="display: none;">
+            <!--Feedback section to allow users to message the web adminstrator about any mistakes they find on the site-->
             <p class="special">Feedback</p>
                 <h1>Find an error in the site?</h1>
                 <form name="articleForm" onsubmit="return validateForm()" action="/submit-article" method="post">
@@ -364,7 +378,8 @@
                     <input type="submit" value="Submit">
                 </form>
         </div>
-
+        <!--This long section contains all the articles and sections of the website. Each section is given an ID of its article subsection numbers, for instance
+        Article 1, section 0 is sec10 or article 10 section 11 is sec1011. These IDs are used to for the algorithm to know what content to display-->
         <div class="Article1"> 
             <div id="sec10" class="content" style="display: none;">
                 <h2>CHAPTER 28</h2> 
@@ -6852,12 +6867,14 @@
             </div>
         </div>
 		<div class="ZoningMap">
+            <!--This section contains the zoning map for the City of Olean-->
             <div id="sec230" class="content" style="display: none;">
                 <p class="special">CITY OF OLEAN - ZONING MAP</p>
                 <img src="Olean-Zoning-Map.png" alt="Zoning Map" style="max-width: 100%; height: auto;">
             </div>
         </div>
         <div class="UseRegulationTable">
+            <!--This section contains the use regulation table which is loaded as an embedded pdf-->
             <div id="sec220" class="content" style="display: none;">
                 <p class="special">USE REGULATION TABLE</p>
 					<div style=" justify-content: center; align-items: center;">
@@ -6866,6 +6883,7 @@
             </div>
         </div>
     </div>
+    <!--Function to load the homepage content when the website is first loaded or refreshed-->
     <script>
         showHome()
     </script>
