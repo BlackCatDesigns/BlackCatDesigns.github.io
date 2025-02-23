@@ -1,4 +1,7 @@
-
+/*Alex Ermer
+IT371 - WEB DESIGN AND DEVELOPMENT
+Website Final Project
+February 23, 2025*/
 
 
 /*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
@@ -96,6 +99,7 @@
     text-decoration: none;
 }
 
+/*Banner on top of screen*/
 header {
     position: fixed;
     top: 0;
@@ -108,12 +112,14 @@ header {
     align-items: center;
 }
 
+/*Styles the list in the banner*/
 .HeaderList {
     padding: 50px;
     margin: 5px;
     display: flex;
 }
 
+/*Styles the text of the banner list*/
 li.headerlinks {
   padding-left: 10px;
 	padding-right: 10px;
@@ -144,6 +150,7 @@ li.headerlinks a {
 	padding-top: 30px;
 }
 
+/*Creates and styles the area for the sidebar*/
 .sidebar {
     position: fixed;
     top: 15%;
@@ -153,13 +160,14 @@ li.headerlinks a {
     justify-content: space-between;
     background-color: #f5f5f5fd;
     padding: 20px;
-	padding-bottom: 120px;
+	  padding-bottom: 120px;
     box-sizing: border-box;
     overflow-y: auto;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/*Styles the headings for Contact, About, Help, and Feedback*/
 .special {
   font-family: 'Franklin Gothic Medium', sans-serif;
   font-size: 36px;
@@ -171,24 +179,31 @@ li.headerlinks a {
   align-items: center;
 }
 
+/*Styles the list containing the links in the sidebar*/
 ul.ch28 {
     padding-left: 0; 
     margin-left: 0;   
 }
+
 .articles {
     list-style-type: none;
     padding-left: 0; 
     margin-left: 0;      
 }
 
+/*Hides all the checkboxes for the sections when the page is first loaded*/
 .section {
     display: none;
 }
+
+/*Hides all the content when the page is first loaded*/
 .content {
   display: none;
 }
+
+/*Creates the space to display all the main content*/
 .main-content {
-    margin-left: 20%; /* Adjust margin to match sidebar width */
+    margin-left: 20%; 
     width: 80%;
     padding: 25px;
     padding-top: 7.5%;
@@ -196,6 +211,7 @@ ul.ch28 {
     overflow-y: auto;
 }
 
+/*Creates the display which is shown for the homepage*/
 .HomePage {
     background-image: url(Downtown\ Image.jpg);
     background-repeat: no-repeat;
@@ -208,6 +224,19 @@ ul.ch28 {
     font-family: 'Franklin Gothic Medium', sans-serif;
 }
 
+.HomeMain {
+  font-size: 64px;
+  background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
+  width: 1880px;
+}
+
+.HomeSub {
+  font-size: 32px;
+  background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
+  width: 1880px;
+}
+
+/*Styles the search box*/
 #searchBox {
   width: 350px;
   height: 30px;
@@ -215,23 +244,7 @@ ul.ch28 {
   font-size: 22px; 
 }
 
-.highlight {
-  background-color: yellow;
-  font-weight: bold;
-}
-
-.HomeMain {
-    font-size: 64px;
-    background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
-    width: 1880px;
-}
-
-.HomeSub {
-    font-size: 32px;
-    background-image: linear-gradient(0deg, rgba(24, 22, 141, .5) 0%, rgba(32, 22, 85, 0.75) 0%);
-    width: 1880px;
-}
-  /*Main content Styling*/
+/*Controls how the text of the city code is displayed*/
 
 h2 {
     text-align: center;
@@ -278,6 +291,8 @@ p.sec10hi, p.sec11hi, p.sec12hi, p.sec13hi, p.sec14hi, p.sec15hi, p.sec16hi, p.s
     text-indent: -50px;
 }
 
+
+/*Hides all the special pages when the website is first loaded*/
 .Help {
   display: none;
 }
