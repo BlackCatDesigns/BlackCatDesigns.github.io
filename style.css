@@ -114,7 +114,6 @@ header {
     display: flex;
 }
 
-
 li.headerlinks {
   padding-left: 10px;
 	padding-right: 10px;
@@ -289,8 +288,6 @@ p.sec10hi, p.sec11hi, p.sec12hi, p.sec13hi, p.sec14hi, p.sec15hi, p.sec16hi, p.s
 .Contact {
   display: none;
 }
-
-
 
 .show {
     display: block;
